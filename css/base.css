@@ -61,7 +61,15 @@ audio:not([controls]) {
 template {
 	display: none;
 }
-
+.anli{
+	float: left;
+    padding-left: 44%;
+   
+}
+.anli h2{
+	 font-size: 50px;
+	 letter-spacing:8px;
+}
 a {
 	background: transparent;
 }
