@@ -64,12 +64,14 @@ template {
 .anli{
 	float: left;
     padding-left: 44%;
-   
+    padding-top: 180px;
+    padding-bottom: 30px;
 }
-.anli h2{
+.anli .zhanshi{
 	 font-size: 50px;
-	 letter-spacing:8px;
+	  letter-spacing:8px;
 }
+
 a {
 	background: transparent;
 }

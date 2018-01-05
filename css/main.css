@@ -964,7 +964,9 @@ input::-moz-focus-inner {
 .pull-quote blockquote:before {
 	content: none;
 }
-
+.buttons{
+	padding-top: 20px;
+}
 /** 
  * Stats Tab
  * ---------
@@ -1126,7 +1128,7 @@ header .logo a {
 	outline: 0;
 	border: none;
 	width: 120px;
-	height: 80px;
+	height: 48px;
 	background: url("../images/logo.png") no-repeat center;
 	background-size: 120px 48px;
 	font: 0/0 a;
@@ -1388,7 +1390,7 @@ header .logo a {
 	font-family: "domine-bold", serif;
 	font-size: 5.3rem;
 	line-height: 1.267;
-	color: #ed254d;
+	color: rgba(255, 255, 255, 0.8);
 	padding: 0 12%;
 	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }
@@ -1598,7 +1600,7 @@ header .logo a {
 	position: absolute;
 	left: 50%;
 	top: 0;
-	background: rgba(63, 80, 96, 0.15);
+	/*background: rgba(63, 80, 96, 0.15);*/
 }
 
 .info-entry .info-entry-content {
