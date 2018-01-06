@@ -95,7 +95,7 @@ a:visited {
 a:hover,
 a:focus,
 a:active {
-	color: #000000;
+	/*color: #000000;*/
 	outline: 0;
 }
 
@@ -1118,7 +1118,7 @@ header {
 header .logo {
 	position: absolute;
 	left: 26px;
-	top: -4px;
+	top: 15px;
 }
 
 header .logo a {
@@ -1243,7 +1243,7 @@ header .logo a {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:768px) {
 	header .logo {
-		top: 33px;
+		top: 10px;
 	}
 }
 
@@ -1816,7 +1816,17 @@ header .logo a {
 	position: relative;
 	padding-bottom: 2.1rem;
 }
-
+a:visited
+{
+background-color:yellow;
+color: yellow;
+}
+/*a:hover {
+color: yellow;
+}
+a:active {
+	color: yellow;
+}*/
 #stats .icon-part::after {
 	content: "";
 	display: block;
@@ -2489,7 +2499,7 @@ footer a:active {
 
 .footer-info a,
 .footer-info a:visited {
-	color: #292c35;
+	/*color: #292c35;*/
 }
 
 .footer-info a:hover,
