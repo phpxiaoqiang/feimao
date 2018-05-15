@@ -156,7 +156,7 @@
             window.setTimeout(function() {
               var timeOutDateTime = new Date();
               if (timeOutDateTime - loadDateTime < 5000) {
-                window.location = "weibo://";
+                // window.location = "weibo://";
                 if (lang !== 'zh-CN') {
                   window.location = "https://music.163.com/";//ios国外下载地址
                 } else {
@@ -170,7 +170,7 @@
           }else if (navigator.userAgent.match(/android/i)) {
             var state = null;
             try {
-              window.location = 'weixin://';
+              // window.location = 'weixin://';
               setTimeout(function(){
                 if (lang !== 'zh-CN') {
                   window.location = "http://www.huaban.com";//android国外下载地址
