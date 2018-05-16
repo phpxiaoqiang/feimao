@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>游戏名称</title>
+    <link rel="stylesheet" href="./vendor/normalize.css">
+    <link rel="stylesheet" href="./vendor/swiper.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="body">
+        <div class="tac">
+            <h1 class="title">xxxx游戏名称</h1>
+            <h4 class="sub-title">xxxx副标题</h4>
+        </div>
+        <div class="df-sb aic container">
+            <div class="df-sb_item">
+                <div class="nor-text"><span class="hige-score">积分记录:</span> <span class="orange" id="high_score">242353</span></div>
+                <div class="nor-text"><span class="down-times">下载次数:</span> <span class="black" id="download_times">533353</span></div>
+            </div>
+            <div class="df-sb_item">
+                <div class="swiper-container text-swiper" id="text_swiper">
+                    <div class="swiper-wrapper" id="text_wrap">
+                        <!--<div class="swiper-slide"><span class="user-name">小强</span><span class="say">哈哈哈哈哈哈</span></div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tac">
+            <span class="link-down">点击下载</span>
+        </div>
+        <div class="liuyan-wrap container">
+            <span class="btn-liuyan finish-btn">留言</span>
+        </div>
+        <div style="padding-left: 20px;padding-right: 20px;">
+            <div class="swiper-container img-swiper" id="img_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/poster.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/poster.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/poster.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">惺惺惜惺惺想寻</div>
+    </div>
+    <div class="form-modal">
+        <div class="modal-box">
+            <span class="btn-close"></span>
+            <div class="t-title">留言信息</div>
+            <div class="form-info">
+                <div class="form-info-item">
+                    <label class="form-info-key">昵称</label>
+                    <input type="text" class="form-info-value" id="nickname" placeholder="输入昵称" value="" />
+                </div>
+                <div class="form-info-item">
+                    <lable class="form-info-key">留言</lable>
+                    <textarea placeholder="请留言" id="msg" class="form-info-value"></textarea>
+                </div>
+            </div>
+            <button class="btn-black">提交</button>
+        </div>
+    </div>
+    <div class="showload" style="display: none;"><p>点击右上角打开浏览器</p></div>
+    <script src="./vendor/jquery-3.1.1.min.js"></script>
+    <script src="./vendor/swiper.min.js"></script>
+    <script>
+        var ua = window.navigator.userAgent.toLowerCase();
+        $(function () {
+          var lang = navigator.systemLanguage?navigator.systemLanguage:navigator.language
+          var msg
+          if (lang !== 'zh-CN') {
+            $('.title').text('gama name')
+            $('.sub-title').text('subtitle')
+            $('.link-down').text('Download')
+            $('.hige-score').text('ScoreRecord')
+            $('.down-times').text('download')
+            $('.btn-liuyan').text('message')
+            $('.copyright').text('')
+          }
+          if(ua.match(/MicroMessenger/i) == 'micromessenger') {
+            $('.showload').hide()
+          }
+          $('.link-down').on('click', function () {
+            if(ua.match(/MicroMessenger/i) == 'micromessenger') {
+              $('.showload').show()
+            } else {
+              openApp()
+            }
+          })
+          var swiper_img = new Swiper('#img_swiper', {
+            autoplay: true
+          })
+          var text_wrap = $('#text_wrap')
+          $('.finish-btn').on('click', function() {
+            $('.form-modal').fadeIn();
+          });
+          $('.btn-close').on('click', function() {
+            $('.form-modal').fadeOut();
+          });
+          $.ajax({
+            url: './data/text.json',
+            success: function (res) {
+              var text_arr = res.msg
+              var high_score = res.high_score
+              var download_times = res.download_times
+              msg = res
+              $('#high_score').text(high_score)
+              $('#download_times').text(download_times)
+              setInterval(function () {
+                download_times ++
+                $('#download_times').text(download_times)
+              }, 60000 * Math.random())
+              text_arr.map(function (v) {
+                var text_cont = "<div class='swiper-slide'><span class='user-name'>" + v.name + "</span>" + "<span class='say'>" + v.value + "</span></div>"
+                text_wrap.append(text_cont)
+              })
+              var swiper_txt = new Swiper('#text_swiper', {
+                autoplay: true,
+                direction: 'vertical',
+                slidesPerView: 'auto',
+                loop : true
+              })
+            }
+          })
+          $('.btn-black').on('click', function() {
+            var nickname = $('#nickname').get(0).value
+            var text_msg = $('#msg').get(0).value
+            if (!nickname) {
+              alert('请填写昵称')
+              return
+            }
+            if (!text_msg) {
+              alert('请填写留言')
+              return
+            }
+            $('.form-modal').fadeOut();
+          })
+          $('.showload').on('click', function () {
+            $('.showload').hide()
+          })
+        })
+        function openApp(){
+          var lang = navigator.systemLanguage?navigator.systemLanguage:navigator.language
+          $('.showload').remove()
+          if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {
+            var loadDateTime = new Date();
+            window.setTimeout(function() {
+              var timeOutDateTime = new Date();
+              if (timeOutDateTime - loadDateTime < 5000) {
+                window.location = "weibo://";
+                if (lang !== 'zh-CN') {
+                  window.location = "https://music.163.com/";//ios国外下载地址
+                } else {
+                  window.location = "https://www.baidu.com/";//ios国内下载地址
+                }
+              } else {
+                window.close();
+              }
+            },2000);
+            
+          }else if (navigator.userAgent.match(/android/i)) {
+            var state = null;
+            try {
+              window.location = 'weixin://';
+              setTimeout(function(){
+                if (lang !== 'zh-CN') {
+                  window.location = "https://music.163.com/";//android国外下载地址
+                } else {
+                  window.location = "https://www.baidu.com/";//android国内下载地址
+                }
+              },500);
+            } catch(e) {}
+          } else {
+            window.location="http://www.youku.com/"
+          }
+        }
+    </script>
+</body>
+</html>
