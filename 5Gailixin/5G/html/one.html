@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-		<title>首页</title>
-		<link rel="stylesheet" href="../css/style.css" />
-		<!--<script type="text/javascript" src="../js/jquery-2.2.2.min.js"></script>-->
-		<!--<script type="text/javascript" src="../js/one.js"></script>-->
-		<!--<script type="text/javascript" src="../js/zepto.js"></script>-->
-	</head>
-	<body>
-		<div class="index_bg">
-			<div class="logo"></div>
-			<div class="index_main">
-				<div class="index_title"></div>
-				<div class="turntable">
-					<!--<div class="turntable_btn" id="turnBtn"></div>-->
-					<div class="turntable_btn" id="line"></div>
-				</div>
-				<div class="footer_text"></div>
-			</div>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>首页</title>
+	<link rel="stylesheet" href="../css/style.css" />
+	<!--<script type="text/javascript" src="../js/jquery-2.2.2.min.js"></script>-->
+	<!--<script type="text/javascript" src="../js/one.js"></script>-->
+	<!--<script type="text/javascript" src="../js/zepto.js"></script>-->
+</head>
+<body>
+<div class="index_bg">
+	<div class="logo"></div>
+	<div class="index_main">
+		<div class="index_title"></div>
+		<div class="turntable">
+			<!--<div class="turntable_btn" id="turnBtn"></div>-->
+			<div class="turntable_btn" id="line"></div>
 		</div>
-		<script type="text/javascript">
-    var clientWidth = document.documentElement.clientWidth,
-        viewport = null,
-        viewportWidth = 'device-width',
-        viewportScale = 1;
-    if (clientWidth > 320) {
-        viewport = document.querySelector('meta[name="viewport"]');
-        viewportScale = clientWidth / 320;
-        viewportWidth = 320;
-        viewport.setAttribute('content', 'width=' + viewportWidth + ', initial-scale=' + viewportScale + ', maximum-scale=' + viewportScale + ', user-scalable=0');
-    }
-    </script>
-    
-    <script type="text/javascript" src="../js/zepto.js"></script>
-    <script type="text/javascript">
+		<div class="footer_text"></div>
+	</div>
+</div>
+<!--<script type="text/javascript">
+var clientWidth = document.documentElement.clientWidth,
+viewport = null,
+viewportWidth = 'device-width',
+viewportScale = 1;
+if (clientWidth > 320) {
+viewport = document.querySelector('meta[name="viewport"]');
+viewportScale = clientWidth / 320;
+viewportWidth = 320;
+viewport.setAttribute('content', 'width=' + viewportWidth + ', initial-scale=' + viewportScale + ', maximum-scale=' + viewportScale + ', user-scalable=0');
+}
+</script>-->
+
+<script type="text/javascript" src="../js/zepto.js"></script>
+<script type="text/javascript">
     //获得point2顶角的弧度值
     function getAngle(point1, point2, point3) {
         var bb = (point2.y - point1.y) * (point2.y - point1.y) + (point2.x - point1.x) * (point2.x - point1.x);
@@ -82,10 +82,10 @@
     var rolate = 0;
     //圆心
     var pointCenter = {
-            x: 159,
-            y: 187
-        }
-        //初始移动点
+        x: 159,
+        y: 187
+    }
+    //初始移动点
     var pointO = false;
     var ro = 0;
 
@@ -131,6 +131,6 @@
     line.addEventListener('touchend', function() {
         rolate = ro;
     });
-    </script>
-	</body>
+</script>
+</body>
 </html>
