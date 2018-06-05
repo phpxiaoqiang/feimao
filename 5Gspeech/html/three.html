@@ -3,31 +3,31 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-		<title>第三页</title>
+		<title>来自爱立信的邀请函</title>
 		<link rel="stylesheet" href="../css/style.css" />
 	</head>
 	<body>
 		<div class="page pageThree">
 			<div class="logo"></div>
-			<div class="main_text">
+			<div id="div3" class="main_text">
 				欢迎参观世界移动大会·上海。在本次大会期间，爱立信将围绕“5G is open for business”为主题，为您呈现三大领域的前沿趋势。
 			</div>
 			<ul class="main_content">
-				<li class="grow">
+				<li id="Grow" class="grow">
 					<b></b>
 					<span>
 						<p>引领物联网持续增长</p>
 						<p>Grow with IoT</p>
 					</span>
 				</li>
-				<li class="cloud">
+				<li id="Optimized" class="cloud">
 					<b></b>
 					<span>
 						<p>驱动灵活高效的电信云</p>
 						<p>Optimized core and cloud</p>
 					</span>
 				</li>
-				<li class="signal">
+				<li id="Capture" class="signal">
 					<b></b>
 					<span>
 						<p>释放5G商业潜能</p>
@@ -41,3 +41,14 @@
 		<script type="text/javascript" src="../js/common.js"></script>
 	</body>
 </html>
+<script>
+    // $("#div2").fadeIn("slow");
+    $("#div3").fadeOut();
+    $("#div3").fadeIn(3000);
+    $("#Grow").fadeOut();
+    $("#Grow").fadeIn(6000);
+    $("#Optimized").fadeOut();
+    $("#Optimized").fadeIn(8000);
+    $("#Capture").fadeOut();
+    $("#Capture").fadeIn(10000);
+</script>

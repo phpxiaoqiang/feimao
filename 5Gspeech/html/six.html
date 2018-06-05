@@ -3,16 +3,16 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-		<title>第六页</title>
+		<title>来自爱立信的邀请函</title>
 		<link rel="stylesheet" href="../css/style.css" />
 	</head>
 	<body>
 		<div class="page pageSix">
 			<div class="logo_black"></div>
 			<div class="position">
-				<img src="../img/position_diagram.png"/>
+				<img id="pos" style="display:block;" src="../img/position_diagram.png"/>
 			</div>
-			<div class="time_place">
+			<div id="Capture" class="time_place">
 				<p>时间：2018.6.27 - 2018.6.29</p>
 				<p>地点：D66,N3</p>
 			</div>
@@ -25,3 +25,13 @@
 		<script type="text/javascript" src="../js/common.js"></script>
 	</body>
 </html>
+<script>
+
+    $("#pos").fadeOut();
+    $("#pos").fadeIn(8000);
+    $("#Capture").fadeOut();
+    $("#Capture").fadeIn(10000);
+    $(".tip").fadeOut();
+    $(".tip").fadeIn(20000);
+
+</script>

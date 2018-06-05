@@ -3,22 +3,49 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-		<title>第二页</title>
+		<title>来自爱立信的邀请函</title>
 		<link rel="stylesheet" href="../css/style.css" />
+
 	</head>
 	<body>
 		<div class="page pageTwo">
 			<div class="logo_black"></div>
 			<div class="main_text">
-				<p>Power up your growth.</p>
-				<p>5G open for business.</p>
+				<p class="name">Power up your growth.</p>
+				<p class="name">5G open for business.</p>
 			</div>
 			<div class="arrow_up" curPage='2'></div>
 		</div>
 		<script type="text/javascript" src="../js/jquery-2.2.2.min.js"></script>
 		<script type="text/javascript" src="../js/common.js"></script>
+
 		<script type="text/javascript">
-		
+            function index(){
+                
+                $('.name').css('color','#ccc');  //默认值
+                 setTimeout( "$('.name').css('color','#333')",300); //第二次闪烁
+            };
+            window.setInterval(index, 1200); //让index 多久循环一次
+            // if (document.getElementById||document.all)
+            //     var crossheader=document.getElementById? document.getElementById("flyin").style : document.all.flyin.style
+            // function animatein(){
+            //     if (parseInt(crossheader.left)<0)
+            //         crossheader.left=parseInt(crossheader.left)+20
+            //     else{
+            //         crossheader.left=0
+            //         crossheader.fontStyle="normal"
+            //         clearInterval(start)
+            //     }
+            // }
+            // if (document.getElementById||document.all)
+            //     start=setInterval("animatein()",50)
+            // $(function () {
+            //     text({
+            //         str: "土地是以它的肥沃和收获而被估价的。才能也是土地，不过它生产的不是粮食，而是真理。如果只能滋生瞑想和幻想的话，即使再大的才能也只是砂地或盐池，那上面连小草也长不出来的。",
+            //         effect: "rightBig",
+            //         speed : 200,
+            //     });
+            // });
 //		$(function(){
 //			$("body").on("touchstart", function(e) {
 //			 e.preventDefault();

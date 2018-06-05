@@ -4,13 +4,13 @@
 		<meta charset="UTF-8">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-		<title>第七页</title>
+		<title>来自爱立信的邀请函</title>
 		<link rel="stylesheet" href="../css/style.css" />
 	</head>
 	<body>
 		<div class="page index_bg pageTwo pageSeven">
 			<div class="logo"></div>
-			<div class="main_text">
+			<div id="dvmq" class="main_text">
 				Welcome to ShangHai!
 			</div>
 			<input class="arrow_up" type="hidden" curPage='7'/>
@@ -19,3 +19,20 @@
 		<script type="text/javascript" src="../js/common.js"></script>
 	</body>
 </html>
+<script>
+    // function index(){
+    //     $('.main_text').css('color','#ccc');  //默认值
+    //     setTimeout( "$('.name').css('color','#333')",300); //第二次闪烁
+    // };
+    function scroll_news(){
+        $(function(){
+            $('#dvmq').eq(0).fadeOut('slow',function(){
+                //   alert($(this).clone().html());
+                //克隆:不用克隆的话，remove()就没了。
+                $(this).clone().appendTo($(this).parent()).fadeIn('slow');
+                $(this).remove();
+            });
+        });
+    }
+    setInterval('scroll_news()',1000);
+</script>

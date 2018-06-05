@@ -1,10 +1,46 @@
-<!DOCTYPE html>
+<!--<h2 id="flyin" style="position:relative;left:-400;font-style:italic">-->
+	<!--&lt;!&ndash;<font face="Arial">陈泽锋教你如何让文字从左边飞入</font>&ndash;&gt;-->
+	<!--&lt;!&ndash;</h2>&ndash;&gt;-->
+	<!--&lt;!&ndash;<script>&ndash;&gt;-->
+
+	<!--&lt;!&ndash;if (document.getElementById||document.all)&ndash;&gt;-->
+	<!--&lt;!&ndash;var crossheader=document.getElementById? document.getElementById("flyin").style : document.all.flyin.style&ndash;&gt;-->
+	<!--&lt;!&ndash;function animatein(){&ndash;&gt;-->
+	<!--&lt;!&ndash;if (parseInt(crossheader.left)<0)&ndash;&gt;-->
+	<!--&lt;!&ndash;crossheader.left=parseInt(crossheader.left)+20&ndash;&gt;-->
+	<!--&lt;!&ndash;else{&ndash;&gt;-->
+	<!--&lt;!&ndash;crossheader.left=0&ndash;&gt;-->
+	<!--&lt;!&ndash;crossheader.fontStyle="normal"&ndash;&gt;-->
+	<!--&lt;!&ndash;clearInterval(start)&ndash;&gt;-->
+	<!--&lt;!&ndash;}&ndash;&gt;-->
+	<!--&lt;!&ndash;}&ndash;&gt;-->
+	<!--&lt;!&ndash;if (document.getElementById||document.all)&ndash;&gt;-->
+	<!--&lt;!&ndash;start=setInterval("animatein()",50)&ndash;&gt;-->
+	<!--&lt;!&ndash;</script>-->
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title></title>
-	</head>
-	<body>
-		
-	</body>
+<title>jQuery插件版文字轮流滚动，一步一停</title>
+<body>
+<script language="JavaScript" type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+    function scroll_news(){
+        $(function(){
+            $('#dvmq li').eq(0).fadeOut('slow',function(){
+                //   alert($(this).clone().html());
+                //克隆:不用克隆的话，remove()就没了。
+                $(this).clone().appendTo($(this).parent()).fadeIn('slow');
+                $(this).remove();
+            });
+        });
+    }
+    setInterval('scroll_news()',1000);
+</script>
+<div id="dvmq" style="width:363px; height: 32px;" >
+	<ul>
+		<li>1,one</li>
+		<li>2,two</li>
+		<li>3,three</li>
+		<li>4,我走一步，停一停！</li>
+	</ul>
+</div>
+</body>
 </html>
