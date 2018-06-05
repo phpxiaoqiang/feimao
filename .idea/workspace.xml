@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e8c1c4c3-3032-4ce0-8484-841860e5cbed" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/5Gyanjiang/html/five.html" afterPath="$PROJECT_DIR$/5Gyanjiang/html/five.html" />
-      <change beforePath="$PROJECT_DIR$/5Gyanjiang/html/four.html" afterPath="$PROJECT_DIR$/5Gyanjiang/html/four.html" />
-      <change beforePath="$PROJECT_DIR$/5Gyanjiang/html/one.html" afterPath="$PROJECT_DIR$/5Gyanjiang/html/one.html" />
-      <change beforePath="$PROJECT_DIR$/5Gyanjiang/html/seven.html" afterPath="$PROJECT_DIR$/5Gyanjiang/html/seven.html" />
-      <change beforePath="$PROJECT_DIR$/5Gyanjiang/html/six.html" afterPath="$PROJECT_DIR$/5Gyanjiang/html/six.html" />
-      <change beforePath="$PROJECT_DIR$/5Gyanjiang/html/three.html" afterPath="$PROJECT_DIR$/5Gyanjiang/html/three.html" />
-      <change beforePath="$PROJECT_DIR$/5Gyanjiang/html/two.html" afterPath="$PROJECT_DIR$/5Gyanjiang/html/two.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +12,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="four.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/5Gyanjiang/html/four.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -140,17 +144,18 @@
       <workItem from="1527502843689" duration="5919000" />
       <workItem from="1528191567930" duration="477000" />
       <workItem from="1528192048014" duration="159000" />
-      <workItem from="1528192231168" duration="3875000" />
+      <workItem from="1528192231168" duration="4946000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18927000" />
+    <option name="totallyTimeSpent" value="19998000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="23" width="1440" height="824" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21101573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21101573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -347,14 +352,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/5Gyanjiang/html/four.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/5Gyanjiang/html/seven.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -407,6 +404,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5Gyanjiang/html/four.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="24" />
           <folding />
         </state>
       </provider>
