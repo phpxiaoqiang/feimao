@@ -1,0 +1,320 @@
+@charset "utf-8";
+/* CSS Document */
+/*头部声明*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td ,a{ margin:0; padding:0; }
+body { font-size:12px; color:#333; font-family:"微软雅黑"; background:#fff; line-height:24px; }
+fieldset, img { border:0; }
+ol, ul { list-style:none; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+em { font-style:normal; }
+input, button, select, textarea { outline:none; } 
+textarea { resize:none; }
+a { color: #666; text-decoration:none; }
+a:hover{text-decoration:none;}
+
+/*通用*/
+html{
+	font-size:37.5px;
+}
+@font-face{
+	font-family:'EricssonHilda-Regular';
+	src: url('font/EricssonHilda-Regular.ttf'); 
+}
+@font-face{
+	font-family:'EricssonHilda-Medium';
+	src: url('font/EricssonHilda-Medium.ttf'); 
+}
+@font-face{
+	font-family:'SourceHanSansCN-Regular';
+	src: url('font/SourceHanSansCN-Regular.otf'); 
+}
+@font-face{
+	font-family:'SourceHanSansCN-Medium';
+	src: url('font/SourceHanSansCN-Medium.otf'); 
+}
+@font-face{
+	font-family:'SourceHanSansCN-Light';
+	src: url('font/SourceHanSansCN-Light.otf'); 
+}
+.arrow_up{
+	position:absolute;
+	/*bottom:0.667rem;*/
+	bottom:0.6rem;
+	left:50%;
+	width:0.7333rem;
+	height:0.4267rem;
+	margin-left:-0.3333rem;
+	background:url(../img/arrow_up.png) no-repeat left top / 100% auto;
+}
+
+/*首页*/
+.index_bg{
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background:url(../img/index_bg.png) no-repeat left top / 100% 100%;
+	padding:0.6rem 0.27rem 0;
+}
+.index_box{
+	/*padding:0 0.27rem;*/
+}
+.logo{
+	width:1.24rem;
+	height:1.08rem;
+	background:url(../img/logo.png) no-repeat center center / 100% 100%;
+	margin-left:0.44rem;
+}
+.index_title{
+	width:100%;
+	height:0.907rem;
+	background:url(../img/index_title.png) no-repeat center center / auto 0.907rem;
+	margin-top:1.293rem;
+}
+.index_main{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-4.18rem;;
+	margin-top:-7.453rem;
+	width:8.36rem;
+	height:14.9rem;
+}
+.turntable{
+	/*position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-4.18rem;;
+	margin-top:-4.54rem;*/
+	display:flex;
+	align-items: center;
+	width:8.36rem;
+	height:9.08rem;
+	background:url(../img/turntable.png) no-repeat center bottom / 8.2267rem 8.56rem;
+	margin:0.6rem auto 0.8rem;
+}
+.turntable_btn{
+	/*width:8.36rem;
+	height:9.08rem;*/
+	width:6rem;
+	height:6rem;
+	background:url(../img/turntable_btn.png) no-repeat center center / 6rem 6rem;
+	margin:0 auto;
+	/*transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);*/
+	/*transition: transform 1s;*/
+}
+.footer_text{
+	/*position:absolute;
+	bottom:2.2rem;*/
+	width:100%;
+	height:1.0134rem;
+	background:url(../img/footer_text.png) no-repeat center center / 4.3467rem 100%;
+}
+.turn{
+	transform:rotate(180deg);
+	/*animation: turnBtn 4s linear infinite;*/
+}
+/*@keyframes turnBtn {
+    from { transform: rotate(0deg) translateX(70px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(70px) rotate(-360deg); }
+}*/
+
+/*第二页*/
+.page{
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color:#fff;
+	padding:0.6rem 0.27rem 0;
+}
+.logo_black{
+	width:1.24rem;
+	height:1.08rem;
+	background:url(../img/logo_black.png) no-repeat center center / 100% 100%;
+	margin-left:0.44rem;
+}
+.pageTwo .main_text{
+	position:absolute;
+	top:50%;
+	left:0;
+	right:0;
+	width:100%;
+	height:1.8rem;
+	margin-top:-1.7rem;
+}
+.pageTwo .main_text p{
+	width:100%;
+	text-align:center;
+	color:#333;
+}
+.pageTwo .main_text p:first-child{
+	font-family:"EricssonHilda-Regular";
+	font-size:0.6133rem;
+	margin-bottom:0.3rem;
+}
+.pageTwo .main_text p:last-child{
+	font-family:"EricssonHilda-Medium";
+	font-size:0.8rem;
+}
+
+/*第三页*/
+.pageThree{
+	background:url(../img/pageTwo_bg.png) no-repeat left top / 100% 100%;
+	padding:0.6rem 0;
+}
+.pageThree .logo{
+	margin-left:0.71rem;
+}
+.pageThree .main_text{
+	background-color:rgba(51,51,51,0.5);
+	/*padding:0.37rem 0.66rem;*/
+	padding:0.32rem 0.66rem;
+	/*font-size:0.453rem;*/
+	font-size:0.4rem;
+	color:#fff;
+	/*line-height:0.73rem;*/
+	line-height:0.68rem;
+	/*margin:0.893rem 0 1.0267rem;*/
+	margin:0.7rem 0 0.9rem;
+}
+.main_content{
+	padding:0 0.71rem;
+}
+.main_content li{
+	display:flex;
+	background-color:rgba(51,51,51,0.5);
+	/*padding:0.45rem 0.64rem;*/
+	padding:0.35rem 0.56rem;
+	/*margin-bottom:0.64rem;*/
+	margin-bottom:0.55rem;
+}
+.main_content li b{
+	flex:0 0 16%;
+	margin-right:10%;
+}
+.main_content li.grow b{
+	background:url(../img/icon_grow.png) no-repeat left center / auto 1rem;
+}
+.main_content li.cloud b{
+	background:url(../img/icon_cloud.png) no-repeat left center / auto 0.9rem;
+}
+.main_content li.signal b{
+	background:url(../img/icon_signal.png) no-repeat left center / auto 1rem;
+}
+.main_content li span{
+	flex:0 0 74%;
+}
+.main_content li span p{
+	color:#fff;
+}
+.main_content li span p:first-child{
+	font-family:"SourceHanSansCN-Regular";
+	/*font-size:0.533rem;*/
+	font-size:0.46rem;
+	/*margin-bottom:0.08rem;*/
+	/*margin-bottom:0.02rem;*/
+}
+.main_content li span p:last-child{
+	font-family:"EricssonHilda-Regular";
+	font-size:0.4267rem;
+}
+
+/*第四页*/
+.pageFour{
+	color:#fff;
+}
+.pageFour .main_text{
+	background:none;
+	/*padding:0.16rem 0.66rem;*/
+	padding:0.16rem 0.66rem 0;
+}
+.speaker .photo{
+	display:block;
+	/*width:3.93rem;*/
+	/*height:3.97rem;*/
+	width:3.33rem;
+	height:3.37rem;
+	margin:0 auto 0.95rem;
+}
+.speaker .photo img{
+	width:100%;
+	height:auto;
+}
+.speaker .name{
+	display:block;
+	color:#fff;
+	text-align: center;
+} 
+.speaker .name em{
+	display:block;
+	font-family:"SourceHanSansCN-Regular";
+	/*font-size:0.75rem;*/
+	font-size:0.7rem;
+	/*margin-bottom:0.24rem;*/
+	margin-bottom:0.18rem;
+}
+.speaker .name b{
+	/*font-family:"SourceHanSansCN-Light";*/
+	font-weight:normal;
+	font-size:0.43rem;
+}
+.speechTC{
+	margin-top:0.65rem;
+}
+.speechTC p{
+	/*font-family:"SourceHanSansCN-Light";*/
+	font-size:0.453rem;
+	text-align:center;
+}
+
+/*第五页*/
+.pageFive .speaker{
+	/*margin-top:2.2667rem;*/
+	margin-top:1.8rem;
+}
+
+/*第六页*/
+.pageSix{
+	padding:0.6rem 0.68rem 0;
+}
+.pageSix .logo_black{
+	margin-left:0.03rem;
+}
+.pageSix .position{
+	/*margin:0.96rem auto 0.72rem;*/
+	margin:0.3rem 0.4rem 0.2rem;
+}
+.pageSix .position img{
+	width:100%;
+	height:auto;
+}
+.pageSix .time_place{
+	width:6.6rem;
+	height:auto;
+	/*margin:0 auto 0.6rem;*/
+	margin:0 auto 0.06rem;
+}
+.pageSix .time_place p{
+	height:0.667rem;
+	line-height:1;
+	font-size:0.453rem;
+}
+.pageSix .tip{
+	font-size:0.293rem;
+	line-height:0.46rem;
+}
+
+/*第七页*/
+.pageSeven .main_text{
+	height:1rem;
+	line-height:1rem;
+	font-family:"EricssonHilda-Regular";
+	font-size:0.8rem;
+	color:#fff;
+	text-align:center;
+	margin-top:-1rem;
+}
