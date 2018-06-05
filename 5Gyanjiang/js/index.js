@@ -10,7 +10,11 @@ Draggable.create("#indicator", {
         path.css('stroke-dashoffset', angle);
 //  console.log(620*(1-i/360));
         if((angle<330&&angle>323)||(angle>943&&angle<951)){
-            location.href="two.html";
+            setTimeout('toPageTwo()',500);
         }
     },
 });
+
+function toPageTwo(){
+    location.href='two.html';
+}

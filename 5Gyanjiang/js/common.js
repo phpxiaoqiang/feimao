@@ -1,47 +1,64 @@
+var url="";
 $(function(){
-	var curPage=$(".arrow_up").attr('curPage');
-	$("body").on("touchstart", function(e) {
-	 e.preventDefault();
-	 startX = e.originalEvent.changedTouches[0].pageX,
-	 startY = e.originalEvent.changedTouches[0].pageY;
-	});
-	$("body").on("touchmove", function(e) {
-	 e.preventDefault();
-	 moveEndX = e.originalEvent.changedTouches[0].pageX,
-	 moveEndY = e.originalEvent.changedTouches[0].pageY,
-	 X = moveEndX - startX,
-	 Y = moveEndY - startY;
-	 if(Math.abs(X)<Math.abs(Y)){
-	 	if ( Y < 0 ) { //向上滑
-	 	  if(curPage=='2'){
-	 	  	location.href="three.html";
-	 	  }else if(curPage=='3'){
-	 	  	location.href="four.html";
-	 	  }else if(curPage=='4'){
-	 	  	location.href="five.html";
-	 	  }else if(curPage=='5'){
-	 	  	location.href="six.html";
-	 	  }else if(curPage=='6'){
-	 	  	location.href="seven.html";
-	 	  }
-		}else if(Y > 0){ //向下滑
-		  if(curPage=='2'){
-	 	  	location.href="one.html";
-	 	  }else if(curPage=='3'){
-	 	  	location.href="two.html";
-	 	  }else if(curPage=='4'){
-	 	  	location.href="three.html";
-	 	  }else if(curPage=='5'){
-	 	  	location.href="four.html";
-	 	  }else if(curPage=='6'){
-	 	  	location.href="five.html";
-	 	  }else if(curPage=='7'){
-	 	  	location.href="six.html";
-	 	  }
-		}
-	 }
-	});
+    var curPage=$(".arrow_up").attr('curPage');
+    $("body").on("touchstart", function(e) {
+        e.preventDefault();
+        startX = e.originalEvent.changedTouches[0].pageX,
+            startY = e.originalEvent.changedTouches[0].pageY;
+    });
+    $("body").on("touchmove", function(e) {
+        e.preventDefault();
+        moveEndX = e.originalEvent.changedTouches[0].pageX,
+            moveEndY = e.originalEvent.changedTouches[0].pageY,
+            X = moveEndX - startX,
+            Y = moveEndY - startY;
+        if(Math.abs(X)<Math.abs(Y)){
+            if ( Y < 0 ) { //向上滑
+                if(curPage=='2'){
+//	 	  	location.href="three.html";
+                    url="three.html";
+                }else if(curPage=='3'){
+//	 	  	location.href="four.html";
+                    url="four.html";
+                }else if(curPage=='4'){
+//	 	  	location.href="five.html";
+                    url="five.html";
+                }else if(curPage=='5'){
+//	 	  	location.href="six.html";
+                    url="six.html";
+                }else if(curPage=='6'){
+//	 	  	location.href="seven.html";
+                    url="seven.html";
+                }
+            }else if(Y > 0){ //向下滑
+                if(curPage=='2'){
+//	 	  	location.href="one.html";
+                    url="one.html";
+                }else if(curPage=='3'){
+//	 	  	location.href="two.html";
+                    url="two.html";
+                }else if(curPage=='4'){
+//	 	  	location.href="three.html";
+                    url="three.html";
+                }else if(curPage=='5'){
+//	 	  	location.href="four.html";
+                    url="four.html";
+                }else if(curPage=='6'){
+//	 	  	location.href="five.html";
+                    url="five.html";
+                }else if(curPage=='7'){
+//	 	  	location.href="six.html";
+                    url="six.html";
+                }
+            }
+        }
+        setTimeout('toPage()',500);
+    });
 });
+
+function toPage(){
+    location.href=url;
+}
 //var startX;
 //var startY;
 //function handleTouchEvent(event) {
