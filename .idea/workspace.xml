@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e8c1c4c3-3032-4ce0-8484-841860e5cbed" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/5Gyanjiang/js/index.js" afterPath="$PROJECT_DIR$/5Gyanjiang/js/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,31 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/5Gyanjiang/js/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/1a39b1e2cce851ed00b93e24813b53d1/Message/MessageTemp/4defdbb9703bb8718218829e82056f4c/File/common.js">
+      <file leaf-file-name="common(1).js" pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/1a39b1e2cce851ed00b93e24813b53d1/Message/MessageTemp/4defdbb9703bb8718218829e82056f4c/File/common(1).js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index(1).js" pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/1a39b1e2cce851ed00b93e24813b53d1/Message/MessageTemp/4defdbb9703bb8718218829e82056f4c/File/index(1).js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -59,6 +38,7 @@
         <option value="$PROJECT_DIR$/5G/js/one.js" />
         <option value="$PROJECT_DIR$/5Gailixin/5G/html/one.html" />
         <option value="$PROJECT_DIR$/5Gyanjiang/js/index.js" />
+        <option value="$PROJECT_DIR$/5Gyanjiang/js/common.js" />
       </list>
     </option>
   </component>
@@ -69,7 +49,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="824" />
@@ -156,15 +137,15 @@
       <workItem from="1527502843689" duration="5919000" />
       <workItem from="1528191567930" duration="477000" />
       <workItem from="1528192048014" duration="159000" />
-      <workItem from="1528192231168" duration="2353000" />
+      <workItem from="1528192231168" duration="2776000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17405000" />
+    <option name="totallyTimeSpent" value="17828000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="23" width="1440" height="824" extended-state="6" />
+    <frame x="-1" y="23" width="1440" height="824" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21101573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -332,6 +313,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/1a39b1e2cce851ed00b93e24813b53d1/Message/MessageTemp/4defdbb9703bb8718218829e82056f4c/File/index(1).js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5Gyanjiang/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2162">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/1a39b1e2cce851ed00b93e24813b53d1/Message/MessageTemp/4defdbb9703bb8718218829e82056f4c/File/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/5Gyanjiang/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -340,18 +345,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/1a39b1e2cce851ed00b93e24813b53d1/Message/MessageTemp/4defdbb9703bb8718218829e82056f4c/File/common.js">
+    <entry file="file://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/1a39b1e2cce851ed00b93e24813b53d1/Message/MessageTemp/4defdbb9703bb8718218829e82056f4c/File/common(1).js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/1a39b1e2cce851ed00b93e24813b53d1/Message/MessageTemp/4defdbb9703bb8718218829e82056f4c/File/index(1).js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>

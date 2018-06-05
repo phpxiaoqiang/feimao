@@ -1,6 +1,5 @@
 var url="";
 $(function(){
-    var curPage=$(".arrow_up").attr('curPage');
     $("body").on("touchstart", function(e) {
         e.preventDefault();
         startX = e.originalEvent.changedTouches[0].pageX,
@@ -12,6 +11,8 @@ $(function(){
             moveEndY = e.originalEvent.changedTouches[0].pageY,
             X = moveEndX - startX,
             Y = moveEndY - startY;
+        var curPage=$(".arrow_up").attr('curPage');
+        alert(curPage);
         if(Math.abs(X)<Math.abs(Y)){
             if ( Y < 0 ) { //向上滑
                 if(curPage=='2'){
