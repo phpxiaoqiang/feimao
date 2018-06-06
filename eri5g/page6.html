@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>来自爱立信的邀请函 </title>
+	<link rel="stylesheet" href="./css/style.css">
+	<style>
+		.shake {
+			-webkit-animation: shake .8s;
+			animation: shake .8s;
+		}
+
+		.zoomIn {
+			-webkit-animation: zoomIn 1.6s;
+			animation: zoomIn 1.6s;
+		}
+
+		.time_place,
+		.tip {
+			opacity: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="page pageSix">
+		<div class="logo_black"></div>
+		<div class="position zoomIn">
+			<img src="./img/position_diagram.png">
+		</div>
+		<div class="time_place">
+			<p>时间：2018.6.27 - 2018.6.29</p>
+			<p>地点：D66,N3</p>
+		</div>
+		<div class="tip">
+			本次大会，爱立信展台为定向邀请，请联系爱立信当地销售代表获取邀请函相关信息。
+		</div>
+		<div class="arrow_up show" curpage="6"></div>
+	</div>
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+	<script>
+		window.onload = function () {
+			var time_place = document.querySelectorAll('.time_place')[0]
+			var tip = document.querySelectorAll('.tip')[0]
+
+			window.setTimeout(() => {
+				time_place.className += ' shake'
+				time_place.style.opacity = '1'
+			}, 1000);
+
+			window.setTimeout(() => {
+				tip.className += ' shake'
+				tip.style.opacity = '1'
+			}, 2000);
+		}
+	</script>
+
+</body>
+
+</html>

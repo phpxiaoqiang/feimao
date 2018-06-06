@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>第三页</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<!-- <link rel="stylesheet" href="./css/animate.min.css"> -->
+	<style>
+		.cloud, .signal, .grow, .main_text {
+			opacity: 0;
+		}
+		.bounceRight {
+			-webkit-animation: bounceRight 1.5s;
+			animation: bounceRight 1.5s;
+		}
+		.bounceDown {
+			-webkit-animation: bounceRight 1s;
+			animation: bounceRight 1s;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="page pageThree">
+		<div class="logo"></div>
+		<div class="main_text">
+			欢迎参观世界移动大会·上海。在本次大会期间，爱立信将围绕“5G is open for business”为主题，为您呈现三大领域的前沿趋势。
+		</div>
+		<ul class="main_content">
+			<li class="grow">
+				<b></b>
+				<span>
+					<p>引领物联网持续增长</p>
+					<p>Grow with IoT</p>
+				</span>
+			</li>
+			<li class="cloud">
+				<b></b>
+				<span>
+					<p>驱动灵活高效的电信云</p>
+					<p>Optimized core and cloud</p>
+				</span>
+			</li>
+			<li class="signal">
+				<b></b>
+				<span>
+					<p>释放5G商业潜能</p>
+					<p>Capture 5G potential</p>
+				</span>
+			</li>
+		</ul>
+		<div class="arrow_up show" curpage="3"></div>
+	</div>
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+	<script>
+		window.onload = function(){
+			document.querySelectorAll('.main_text')[0].className += ' bounceDown'
+			document.querySelectorAll('.main_text')[0].style.opacity = '1'
+
+
+			var signal = document.querySelectorAll('.signal')[0]
+			var cloud = document.querySelectorAll('.cloud')[0]
+			var grow = document.querySelectorAll('.grow')[0]
+
+			var t1 = window.setTimeout(()=>{
+				grow.className += ' bounceRight'
+				grow.style.opacity = '1'
+			}, 1000)
+
+			var t2 = window.setTimeout(()=>{
+				cloud.className += ' bounceRight'
+				cloud.style.opacity = '1'
+			}, 2200)
+
+			var t3 = window.setTimeout(()=>{
+				signal.className += ' bounceRight'
+				signal.style.opacity = '1'
+			}, 3400)
+		}
+
+
+	</script>
+
+
+</body>
+
+</html>

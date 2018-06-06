@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>第二页</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<style>
+		.fadeDown {
+			-webkit-animation: fadeDown 1.6s;
+			animation: fadeDown 1.6s;
+		}
+		#p2 {
+			opacity: 0;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="page pageTwo">
+		<div class="logo_black"></div>
+		<div class="main_text">
+			<p class="fadeDown">Power up your growth.</p>
+			<p id="p2">5G open for business.</p>
+		</div>
+		<div class="arrow_up show" curpage="2"></div>
+	</div>
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+	<script>
+		var p2 = document.getElementById('p2')
+		window.setTimeout(()=>{
+			p2.className += 'fadeDown'
+			p2.style.opacity = '1'
+		}, 1300)
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>第四页</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<style>
+		.zoomIn {
+			-webkit-animation: zoomIn 1.6s;
+			animation: zoomIn 1.6s;
+		}
+		.slideUp {
+			-webkit-animation: slideUp 1s;
+			animation: slideUp 1s;
+		}
+
+		.name,
+		.speechTC {
+			opacity: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="page pageThree pageFour">
+		<div class="logo"></div>
+		<div class="main_text">
+			此外，全球CEO鲍毅康将亲临上海，为大家带来精彩的演讲。
+		</div>
+		<div class="speaker">
+			<span class="photo zoomIn">
+				<img src="./img/CEO_photo.png">
+			</span>
+			<span class="name">
+				<em>鲍毅康</em>
+				<b>（全球CEO）</b>
+			</span>
+		</div>
+		<div class="speechTC">
+			<p>6月28日 / 13:00-14:00</p>
+			<p>主题演讲4：互联技术美好未来</p>
+			<p>connected@N5,Hall A</p>
+		</div>
+		<div class="arrow_up show" curpage="4"></div>
+	</div>
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+	<script>
+		window.onload = function () {
+			var name = document.querySelectorAll('.name')[0]
+			var speechTC = document.querySelectorAll('.speechTC')[0]
+
+			window.setTimeout(() => {
+				name.className += ' slideUp'
+				name.style.opacity = '1'
+			}, 1200);
+
+			window.setTimeout(() => {
+				speechTC.className += ' slideUp'
+				speechTC.style.opacity = '1'
+			}, 2400);
+		}
+	</script>
+
+</body>
+
+</html>

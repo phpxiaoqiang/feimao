@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>首页</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="index_bg">
+        <div class="logo"></div>
+        <div class="index_main">
+            <div class="index_title"></div>
+            <div class="turntable">
+                <div class="turntable_btn" id="indicator" style="transform: matrix3d(0.15832, 0.98738, 0, 0, -0.98738, 0.15832, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); user-select: none; touch-action: none;"></div>
+            </div>
+            <div class="footer_text"></div>
+        </div>
+    </div>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/TweenLite.min.js"></script>
+    <script src="./js/Draggable.min.js"></script>
+    <script src="./js/CSSPlugin.min.js"></script>
+    <script>
+        var path = $('#path');
+
+        Draggable.create("#indicator", {
+            type: "rotation",
+            throwProps: true,
+            maxRotation: 360,
+            onDrag: function () {
+                var i = this.rotation;
+                var angle = 620 * (1 - i / 360);
+                path.css('stroke-dashoffset', angle);
+                if ((angle < 330 && angle > 323) || (angle > 943 && angle < 951)) {
+                    setTimeout('toPageTwo()', 500);
+                }
+            },
+        });
+
+        function toPageTwo() {
+            location.href = 'page2.html';
+        }
+    </script>
+
+</body>
+
+</html>
