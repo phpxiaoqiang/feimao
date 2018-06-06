@@ -2,110 +2,110 @@ var url="";
 var index=getQueryString('index')?getQueryString('index'):0;
 var curPage=$(".arrow_up").attr('curPage');
 $(function(){
-	$(".page").fadeIn();
-	if(index&&curPage==5){
-		$("#allSpeaker .speaker").eq(index).fadeIn('slow').siblings().fadeOut('slow');
-	}
-	$("body").on("touchstart", function(e) {
-	 e.preventDefault();
-	 startX = e.originalEvent.changedTouches[0].pageX,
-	 startY = e.originalEvent.changedTouches[0].pageY;
-	});
-	$("body").on("touchend", function(e) {
-	 e.preventDefault();
-	 moveEndX = e.originalEvent.changedTouches[0].pageX,
-	 moveEndY = e.originalEvent.changedTouches[0].pageY,
-	 X = moveEndX - startX,
-	 Y = moveEndY - startY;
-	 if(Math.abs(X)<Math.abs(Y)){
-	 	if ( Y < 0 ) { //向上滑
-	 	  if(curPage=='2'){
+    $(".page").fadeIn();
+    if(index&&curPage==5){
+        $("#allSpeaker .speaker").eq(index).fadeIn('slow').siblings().fadeOut('slow');
+    }
+    $("body").on("touchstart", function(e) {
+        e.preventDefault();
+        startX = e.originalEvent.changedTouches[0].pageX,
+            startY = e.originalEvent.changedTouches[0].pageY;
+    });
+    $("body").on("touchend", function(e) {
+        e.preventDefault();
+        moveEndX = e.originalEvent.changedTouches[0].pageX,
+            moveEndY = e.originalEvent.changedTouches[0].pageY,
+            X = moveEndX - startX,
+            Y = moveEndY - startY;
+        if(Math.abs(X)<Math.abs(Y)){
+            if ( Y < -5 ) { //向上滑
+                if(curPage=='2'){
 //	 	  	location.href="three.html";
-			url="three.html";
-			setTimeout('toPage()',500);
-			return;
-	 	  }else if(curPage=='3'){
+                    url="three.html";
+                    setTimeout('toPage()',500);
+                    return;
+                }else if(curPage=='3'){
 //	 	  	location.href="four.html";
-			url="four.html";
-			setTimeout('toPage()',500);
-			return;
-	 	  }else if(curPage=='4'){
+                    url="four.html";
+                    setTimeout('toPage()',500);
+                    return;
+                }else if(curPage=='4'){
 //	 	  	location.href="five.html";
-			url="five.html";
-			setTimeout('toPage()',500);
-			return;
-	 	  }else if(curPage=='5'){
-	 	  	if(index!=6){
-	 	  		$("#allSpeaker .speaker").eq(index+1).fadeIn('slow').siblings().fadeOut('slow');
-	 	  		index++;
-	 	  	}else{
-	 	  		location.href="six.html";
-				url="six.html";
-				setTimeout('toPage()',500);
-	 	  	}
-			return;
-	 	  }else if(curPage=='6'){
+                    url="five.html";
+                    setTimeout('toPage()',500);
+                    return;
+                }else if(curPage=='5'){
+                    if(index!=6){
+                        $("#allSpeaker .speaker").eq(index+1).fadeIn('slow').siblings().fadeOut('slow');
+                        index++;
+                    }else{
+                        location.href="six.html";
+                        url="six.html";
+                        setTimeout('toPage()',500);
+                    }
+                    return;
+                }else if(curPage=='6'){
 //	 	  	location.href="seven.html";
-			url="seven.html";
-			setTimeout('toPage()',500);
-			return;
-	 	  }
-		}else if(Y > 0){ //向下滑
-		  if(curPage=='2'){
+                    url="seven.html";
+                    setTimeout('toPage()',500);
+                    return;
+                }
+            }else if(Y > 5){ //向下滑
+                if(curPage=='2'){
 //	 	  	location.href="one.html";
-	 	  	url="one.html";
-	 	  	setTimeout('toPage()',500);
-			return;
-	 	  }else if(curPage=='3'){
+                    url="one.html";
+                    setTimeout('toPage()',500);
+                    return;
+                }else if(curPage=='3'){
 //	 	  	location.href="two.html";
-			url="two.html";
-			setTimeout('toPage()',500);
-			return;
-	 	  }else if(curPage=='4'){
+                    url="two.html";
+                    setTimeout('toPage()',500);
+                    return;
+                }else if(curPage=='4'){
 //	 	  	location.href="three.html";
-			url="three.html";
-			setTimeout('toPage()',500);
-			return;
-	 	  }else if(curPage=='5'){
-	 	  	if(index!=1){
-	 	  		$("#allSpeaker .speaker").eq(index-1).fadeIn('slow').siblings().fadeOut('slow');
-	 	  		index--;
-	 	  	}else{
+                    url="three.html";
+                    setTimeout('toPage()',500);
+                    return;
+                }else if(curPage=='5'){
+                    if(index!=1){
+                        $("#allSpeaker .speaker").eq(index-1).fadeIn('slow').siblings().fadeOut('slow');
+                        index--;
+                    }else{
 //	 	  	    location.href="four.html";
-				url="four.html";
-				setTimeout('toPage()',500);
-			}
-			return;
-	 	  }else if(curPage=='6'){
+                        url="four.html";
+                        setTimeout('toPage()',500);
+                    }
+                    return;
+                }else if(curPage=='6'){
 //	 	  	location.href="five.html";
-			url="five.html?index=6";
-			index=6;
-			setTimeout('toPage()',500);
+                    url="five.html?index=6";
+                    index=6;
+                    setTimeout('toPage()',500);
 //			$("#allSpeaker .speaker").eq(index).fadeIn('slow').siblings().fadeOut('slow');
-			return;
-	 	  }else if(curPage=='7'){
+                    return;
+                }else if(curPage=='7'){
 //	 	  	location.href="six.html";
-			url="six.html";
-			setTimeout('toPage()',500);
-			return;
-	 	  }
-		}
-	  }
-	  
-	});
+                    url="six.html";
+                    setTimeout('toPage()',500);
+                    return;
+                }
+            }
+        }
+        this.slider.removeEventListener('touchend',this,false);
+    });
 });
 
 function toPage(){
-	location.href=url;
+    location.href=url;
 }
 function getQueryString(name) {
     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
     var r = window.location.search.substr(1).match(reg);
     if ( r != null ){
-       return unescape(r[2]);
+        return unescape(r[2]);
     }else{
-       return null;
-    } 
+        return null;
+    }
 }
 //var startX;
 //var startY;

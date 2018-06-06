@@ -13,77 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="three.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="three.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/5Gspeech/html/three.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="37" column="36" lean-forward="false" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="four.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/5Gspeech/html/four.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-225">
-              <caret line="19" column="56" lean-forward="false" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/5Gspeech/js/common.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="six.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/5Gspeech/html/six.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="five.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/5Gspeech/html/five.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/5Gspeech/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-927">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="one.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/5Gspeech/html/one.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-651">
-              <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+            <state relative-caret-position="276">
+              <caret line="12" column="76" lean-forward="false" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -94,8 +28,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>animatein</find>
-      <find>speechTC</find>
       <find>touchmove</find>
+      <find>speechTC</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -123,12 +57,12 @@
         <option value="$PROJECT_DIR$/5G/index.html" />
         <option value="$PROJECT_DIR$/5Gspeech/html/seven.html" />
         <option value="$PROJECT_DIR$/5Gspeech/html/two.html" />
-        <option value="$PROJECT_DIR$/5Gspeech/html/three.html" />
         <option value="$PROJECT_DIR$/5Gspeech/html/six.html" />
-        <option value="$PROJECT_DIR$/5Gspeech/html/five.html" />
         <option value="$PROJECT_DIR$/5Gspeech/css/style.css" />
         <option value="$PROJECT_DIR$/5Gspeech/html/four.html" />
         <option value="$PROJECT_DIR$/5Gspeech/js/common.js" />
+        <option value="$PROJECT_DIR$/5Gspeech/html/five.html" />
+        <option value="$PROJECT_DIR$/5Gspeech/html/three.html" />
       </list>
     </option>
   </component>
@@ -172,6 +106,12 @@
               <item name="feimao" type="b2602c69:ProjectViewProjectNode" />
               <item name="feimao" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="5Gspeech" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="feimao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feimao" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="5Gspeech" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="feimao" type="b2602c69:ProjectViewProjectNode" />
@@ -227,12 +167,12 @@
       <workItem from="1527502843689" duration="5919000" />
       <workItem from="1528191567930" duration="477000" />
       <workItem from="1528192048014" duration="159000" />
-      <workItem from="1528192231168" duration="19562000" />
+      <workItem from="1528192231168" duration="20214000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34614000" />
+    <option name="totallyTimeSpent" value="35266000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="23" width="1440" height="824" extended-state="0" />
@@ -542,14 +482,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/5Gspeech/html/one.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-651">
-          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/5Gspeech/html/two.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
@@ -561,10 +493,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/5Gspeech/html/three.html">
+    <entry file="file://$PROJECT_DIR$/5Gspeech/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="37" column="36" lean-forward="false" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="36" />
+        <state relative-caret-position="529">
+          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -581,14 +513,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/5Gspeech/html/five.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/5Gspeech/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-927">
@@ -597,20 +521,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/5Gspeech/html/one.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-651">
+          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5Gspeech/html/five.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2737">
+          <caret line="119" column="62" lean-forward="false" selection-start-line="119" selection-start-column="62" selection-end-line="119" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/5Gspeech/html/four.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="19" column="56" lean-forward="false" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+        <state relative-caret-position="254">
+          <caret line="24" column="55" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="55" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/5Gspeech/js/common.js">
+    <entry file="file://$PROJECT_DIR$/5Gspeech/html/three.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        <state relative-caret-position="276">
+          <caret line="12" column="76" lean-forward="false" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
           <folding />
         </state>
       </provider>
