@@ -11,8 +11,8 @@
 		<div class="page pageTwo">
 			<div class="logo_black"></div>
 			<div class="main_text">
-				<p class="name">Power up your growth.</p>
-				<p class="name">5G open for business.</p>
+				<p id="div3">Power up your growth.</p>
+				<p id="Grow">5G open for business.</p>
 			</div>
 			<div class="arrow_up" curPage='2'></div>
 		</div>
@@ -20,12 +20,16 @@
 		<script type="text/javascript" src="../js/common.js"></script>
 
 		<script type="text/javascript">
-            function index(){
-                
-                $('.name').css('color','#ccc');  //默认值
-                 setTimeout( "$('.name').css('color','#333')",300); //第二次闪烁
-            };
-            window.setInterval(index, 1200); //让index 多久循环一次
+            $("#div3").fadeOut();
+            $("#div3").fadeIn(5000);
+            $("#Grow").fadeOut();
+            $("#Grow").fadeIn(30000);
+            // function index(){
+            //
+            //     $('.name').css('color','#ccc');  //默认值
+            //      setTimeout( "$('.name').css('color','#333')",300); //第二次闪烁
+            // };
+        //    window.setInterval(index, 1200); //让index 多久循环一次
             // if (document.getElementById||document.all)
             //     var crossheader=document.getElementById? document.getElementById("flyin").style : document.all.flyin.style
             // function animatein(){
