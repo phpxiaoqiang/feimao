@@ -9,14 +9,14 @@
 	<body>
 		<div class="page pageThree pageFour">
 			<div class="logo"></div>
-			<div class="main_text">
+			<div id="main" style="display:none;" class="main_text">
 				此外，全球CEO鲍毅康将亲临上海，为大家带来精彩的演讲。
 			</div>
 			<div class="speaker_info">
 				<span class="photo">
-					<img src="../img/CEO_photo.png" />
+					<img src="http://7xsdp1.com1.z0.glb.clouddn.com/CEO___photo.png" />
 				</span>
-				<span class="name">
+				<span style="display:none;" id="name" class="name">
 					<em>鲍毅康</em>
 					<b>（全球CEO）</b>
 				</span>
@@ -32,3 +32,12 @@
 		<script type="text/javascript" src="../js/common.js"></script>
 	</body>
 </html>
+<script>
+	$('#main').fadeOut();
+    $("#main").fadeIn(3000);
+    $("#name").fadeOut();
+    setTimeout(function(){
+        $("#name").fadeIn(3000);
+        $("#name").animate({top:"8.5rem"},500);
+    },300);
+</script>

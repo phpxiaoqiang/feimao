@@ -64,8 +64,12 @@
     $("#div3").fadeOut();
     $("#div3").fadeIn(3000);
     $("#Grow").fadeOut();
-    $("#Grow").fadeIn(1000);
-    $("#Grow").animate({top:"5.9rem"},500);
+
+    setTimeout(function(){
+        $("#Grow").fadeIn(1000);
+        $("#Grow").animate({top:"5.9rem"},500);
+	},300);
+
     $("#Optimized").fadeOut();
     setTimeout(function(){
         $("#Optimized").fadeIn(3000);
