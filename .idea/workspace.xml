@@ -4,6 +4,7 @@
     <list default="true" id="e8c1c4c3-3032-4ce0-8484-841860e5cbed" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/5Gspeech/css/style.css" afterPath="$PROJECT_DIR$/5Gspeech/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/5Gspeech/html/four.html" afterPath="$PROJECT_DIR$/5Gspeech/html/four.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,8 +28,8 @@
       <file leaf-file-name="four.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/5Gspeech/html/four.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="43" />
+            <state relative-caret-position="-136">
+              <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -40,7 +41,7 @@
       <file leaf-file-name="six.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/5Gspeech/html/six.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
+            <state relative-caret-position="190">
               <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -54,7 +55,7 @@
       <file leaf-file-name="five.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/5Gspeech/html/five.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2088">
+            <state relative-caret-position="552">
               <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
               <folding />
             </state>
@@ -64,8 +65,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/5Gspeech/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="69">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -86,6 +87,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>animatein</find>
+      <find>speechTC</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -114,9 +116,10 @@
         <option value="$PROJECT_DIR$/5Gspeech/html/seven.html" />
         <option value="$PROJECT_DIR$/5Gspeech/html/two.html" />
         <option value="$PROJECT_DIR$/5Gspeech/html/three.html" />
-        <option value="$PROJECT_DIR$/5Gspeech/html/four.html" />
         <option value="$PROJECT_DIR$/5Gspeech/html/six.html" />
         <option value="$PROJECT_DIR$/5Gspeech/html/five.html" />
+        <option value="$PROJECT_DIR$/5Gspeech/js/common.js" />
+        <option value="$PROJECT_DIR$/5Gspeech/html/four.html" />
         <option value="$PROJECT_DIR$/5Gspeech/css/style.css" />
       </list>
     </option>
@@ -172,7 +175,7 @@
               <item name="feimao" type="b2602c69:ProjectViewProjectNode" />
               <item name="feimao" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="5Gspeech" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -222,12 +225,12 @@
       <workItem from="1527502843689" duration="5919000" />
       <workItem from="1528191567930" duration="477000" />
       <workItem from="1528192048014" duration="159000" />
-      <workItem from="1528192231168" duration="15424000" />
+      <workItem from="1528192231168" duration="17725000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30476000" />
+    <option name="totallyTimeSpent" value="32777000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="23" width="1440" height="824" extended-state="0" />
@@ -564,10 +567,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/5Gspeech/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/5Gspeech/html/four.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="43" />
+        <state relative-caret-position="-136">
+          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -577,7 +588,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/5Gspeech/html/six.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
+        <state relative-caret-position="190">
           <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -589,7 +600,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/5Gspeech/html/five.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2088">
+        <state relative-caret-position="552">
           <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
           <folding />
         </state>
@@ -597,8 +608,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/5Gspeech/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="69">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>

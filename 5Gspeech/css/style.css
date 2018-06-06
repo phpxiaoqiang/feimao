@@ -1,14 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 /*头部声明*/
-* {
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
+
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td ,a{ margin:0; padding:0; }
 body { font-size:12px; color:#333; font-family:"微软雅黑"; background:#fff; line-height:24px; }
 fieldset, img { border:0; }
@@ -303,6 +296,7 @@ html{
 	/*font-family:"SourceHanSansCN-Light";*/
 	font-size:0.453rem;
 	text-align:center;
+	/*position:absolute;*/
 }
 
 /*第五页*/
