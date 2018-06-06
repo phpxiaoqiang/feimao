@@ -11,7 +11,7 @@ $(function(){
 	 startX = e.originalEvent.changedTouches[0].pageX,
 	 startY = e.originalEvent.changedTouches[0].pageY;
 	});
-	$("body").on("touchmove", function(e) {
+	$("body").on("touchend", function(e) {
 	 e.preventDefault();
 	 moveEndX = e.originalEvent.changedTouches[0].pageX,
 	 moveEndY = e.originalEvent.changedTouches[0].pageY,
