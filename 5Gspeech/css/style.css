@@ -57,7 +57,7 @@ html{
 	bottom:0;
 	left:0;
 	right:0;
-	background:url(../img/index_bg.png) no-repeat left top / 100% 100%;
+	background:url(http://7xsdp1.com1.z0.glb.clouddn.com/indexbgt.png) no-repeat left top / 100% 100%;
 	padding:0.6rem 0.27rem 0;
 }
 .index_box{
@@ -94,7 +94,7 @@ html{
 	align-items: center;
 	width:8.36rem;
 	height:9.08rem;
-	background:url(../img/turntable.png) no-repeat center bottom / 8.2267rem 8.56rem;
+	background:url(http://7xsdp1.com1.z0.glb.clouddn.com/xiaozhuanpan.png) no-repeat center bottom / 8.2267rem 8.56rem;
 	margin:0.6rem auto 0.8rem;
 }
 .turntable_btn{
@@ -102,7 +102,7 @@ html{
 	height:9.08rem;*/
 	width:6rem;
 	height:6rem;
-	background:url(../img/turntable_btn.png) no-repeat center center / 6rem 6rem;
+	background:url(http://7xsdp1.com1.z0.glb.clouddn.com/dazhuanpan.png) no-repeat center center / 6rem 6rem;
 	margin:0 auto;
 	/*transform: rotate(0deg);
     -webkit-transform: rotate(0deg);*/
@@ -166,7 +166,7 @@ html{
 
 /*第三页*/
 .pageThree{
-	background:url(../img/pageTwo_bg.png) no-repeat left top / 100% 100%;
+	background:url(http://7xsdp1.com1.z0.glb.clouddn.com/ailixin.png) no-repeat left top / 100% 100%;
 	padding:0.6rem 0;
 }
 .pageThree .logo{
