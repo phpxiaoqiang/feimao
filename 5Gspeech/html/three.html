@@ -1,54 +1,81 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-		<title>来自爱立信的邀请函</title>
-		<link rel="stylesheet" href="../css/style.css" />
-	</head>
-	<body>
-		<div class="page pageThree">
-			<div class="logo"></div>
-			<div id="div3" class="main_text">
-				欢迎参观世界移动大会·上海。在本次大会期间，爱立信将围绕“5G is open for business”为主题，为您呈现三大领域的前沿趋势。
-			</div>
-			<ul class="main_content">
-				<li id="Grow" class="grow">
-					<b></b>
-					<span>
-						<p>引领物联网持续增长</p>
-						<p>Grow with IoT</p>
-					</span>
-				</li>
-				<li id="Optimized" class="cloud">
-					<b></b>
-					<span>
-						<p>驱动灵活高效的电信云</p>
-						<p>Optimized core and cloud</p>
-					</span>
-				</li>
-				<li id="Capture" class="signal">
-					<b></b>
-					<span>
-						<p>释放5G商业潜能</p>
-						<p>Capture 5G potential</p>
-					</span>
-				</li>
-			</ul>
-			<div class="arrow_up" curPage='3'></div>
-		</div>
-		<script type="text/javascript" src="../js/jquery-2.2.2.min.js"></script>
-		<script type="text/javascript" src="../js/common.js"></script>
-	</body>
-</html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>来自爱立信的邀请函</title>
+	<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<div class="page pageThree">
+	<div class="logo"></div>
+	<div id="div3" class="main_text">
+		欢迎参观世界移动大会·上海。在本次大会期间，爱立信将围绕“5G is open for business”为主题，为您呈现三大领域的前沿趋势。
+	</div>
+	<!--<ul class="main_content">
+        <li id="Grow" class="grow">
+            <b></b>
+            <span>
+                <p>引领物联网持续增长</p>
+                <p>Grow with IoT</p>
+            </span>
+        </li>
+        <li id="Optimized" class="cloud">
+            <b></b>
+            <span>
+                <p>驱动灵活高效的电信云</p>
+                <p>Optimized core and cloud</p>
+            </span>
+        </li>
+        <li id="Capture" class="signal">
+            <b></b>
+            <span>
+                <p>释放5G商业潜能</p>
+                <p>Capture 5G potential</p>
+            </span>
+        </li>
+    </ul>-->
+	<div id="Grow" class="part grow">
+		<b></b>
+		<span>
+					<p>引领物联网持续增长</p>
+					<p>Grow with IoT</p>
+				</span>
+	</div>
+	<div id="Optimized" class="part cloud">
+		<b></b>
+		<span>
+					<p>驱动灵活高效的电信云</p>
+					<p>Optimized core and cloud</p>
+				</span>
+	</div>
+	<div id="Capture" class="part signal">
+		<b></b>
+		<span>
+					<p>释放5G商业潜能</p>
+					<p>Capture 5G potential</p>
+				</span>
+	</div>
+	<div class="arrow_up" curPage='3'></div>
+</div>
+<script type="text/javascript" src="../js/jquery-2.2.2.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
 <script>
-    // $("#div2").fadeIn("slow");
     $("#div3").fadeOut();
     $("#div3").fadeIn(3000);
     $("#Grow").fadeOut();
-    $("#Grow").fadeIn(6000);
+    $("#Grow").fadeIn(1000);
+    $("#Grow").animate({top:"5.9rem"},500);
     $("#Optimized").fadeOut();
-    $("#Optimized").fadeIn(8000);
+    setTimeout(function(){
+        $("#Optimized").fadeIn(3000);
+        $("#Optimized").animate({top:"8.5rem"},500);
+    },300);
     $("#Capture").fadeOut();
-    $("#Capture").fadeIn(10000);
+    setTimeout(function(){
+        $("#Capture").fadeIn(5000);
+        $("#Capture").animate({top:"11.1rem"},500);
+    },300);
 </script>
+</body>
+</html>

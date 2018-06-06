@@ -7,7 +7,7 @@ fieldset, img { border:0; }
 ol, ul { list-style:none; }
 h1, h2, h3, h4, h5, h6{ font-size:100%; }
 em { font-style:normal; }
-input, button, select, textarea { outline:none; } 
+input, button, select, textarea { outline:none; }
 textarea { resize:none; }
 a { color: #666; text-decoration:none; }
 a:hover{text-decoration:none;}
@@ -18,23 +18,23 @@ html{
 }
 @font-face{
 	font-family:'EricssonHilda-Regular';
-	src: url('font/EricssonHilda-Regular.ttf'); 
+	src: url('font/EricssonHilda-Regular.ttf');
 }
 @font-face{
 	font-family:'EricssonHilda-Medium';
-	src: url('font/EricssonHilda-Medium.ttf'); 
+	src: url('font/EricssonHilda-Medium.ttf');
 }
 @font-face{
 	font-family:'SourceHanSansCN-Regular';
-	src: url('font/SourceHanSansCN-Regular.otf'); 
+	src: url('font/SourceHanSansCN-Regular.otf');
 }
 @font-face{
 	font-family:'SourceHanSansCN-Medium';
-	src: url('font/SourceHanSansCN-Medium.otf'); 
+	src: url('font/SourceHanSansCN-Medium.otf');
 }
 @font-face{
 	font-family:'SourceHanSansCN-Light';
-	src: url('font/SourceHanSansCN-Light.otf'); 
+	src: url('font/SourceHanSansCN-Light.otf');
 }
 .arrow_up{
 	position:absolute;
@@ -195,26 +195,49 @@ html{
 	/*margin-bottom:0.64rem;*/
 	margin-bottom:0.55rem;
 }
-.main_content li b{
+.pageThree .part{
+	position:absolute;
+	left:0;
+	right:0;
+	display:flex;
+	background-color:rgba(51,51,51,0.5);
+	/*padding:0.45rem 0.64rem;*/
+	padding:0.35rem 0.56rem;
+	/*margin-bottom:0.64rem;*/
+	margin-bottom:0.55rem;
+}
+.pageThree .grow{
+	/*top:5.9rem;*/
+	top:-8.2rem;
+}
+.pageThree .cloud{
+	/*top:8.5rem;*/
+	top:-5.6rem;
+}
+.pageThree .signal{
+	/*top:11.1rem;*/
+	top:-3rem;
+}
+.main_content li b,.pageThree .part b{
 	flex:0 0 16%;
 	margin-right:10%;
 }
-.main_content li.grow b{
+.main_content li.grow b,.pageThree .grow b{
 	background:url(../img/icon_grow.png) no-repeat left center / auto 1rem;
 }
-.main_content li.cloud b{
+.main_content li.cloud b,.pageThree .cloud b{
 	background:url(../img/icon_cloud.png) no-repeat left center / auto 0.9rem;
 }
-.main_content li.signal b{
+.main_content li.signal b,.pageThree .signal b{
 	background:url(../img/icon_signal.png) no-repeat left center / auto 1rem;
 }
-.main_content li span{
+.main_content li span,.pageThree .part span{
 	flex:0 0 74%;
 }
-.main_content li span p{
+.main_content li span p,.pageThree .part span p{
 	color:#fff;
 }
-.main_content li span p:first-child{
+.main_content li span p:first-child,.pageThree .part span p:first-child{
 	font-family:"SourceHanSansCN-Regular";
 	/*font-size:0.533rem;*/
 	font-size:0.46rem;
@@ -251,7 +274,7 @@ html{
 	display:block;
 	color:#fff;
 	text-align: center;
-} 
+}
 .speaker_info .name em{
 	display:block;
 	font-family:"SourceHanSansCN-Regular";
