@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e8c1c4c3-3032-4ce0-8484-841860e5cbed" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/5Gspeech/html/five.html" afterPath="$PROJECT_DIR$/5Gspeech/html/five.html" />
-      <change beforePath="$PROJECT_DIR$/5Gspeech/html/four.html" afterPath="$PROJECT_DIR$/5Gspeech/html/four.html" />
-      <change beforePath="$PROJECT_DIR$/5Gspeech/html/six.html" afterPath="$PROJECT_DIR$/5Gspeech/html/six.html" />
+      <change beforePath="$PROJECT_DIR$/5Gspeech/css/style.css" afterPath="$PROJECT_DIR$/5Gspeech/css/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,7 +51,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="five.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="five.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/5Gspeech/html/five.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2088">
@@ -63,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/5Gspeech/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="235" column="1" lean-forward="true" selection-start-line="235" selection-start-column="1" selection-end-line="235" selection-end-column="1" />
+            <state relative-caret-position="92">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -114,12 +112,12 @@
         <option value="$PROJECT_DIR$/5Gspeech/html/one.html" />
         <option value="$PROJECT_DIR$/5G/index.html" />
         <option value="$PROJECT_DIR$/5Gspeech/html/seven.html" />
-        <option value="$PROJECT_DIR$/5Gspeech/css/style.css" />
         <option value="$PROJECT_DIR$/5Gspeech/html/two.html" />
         <option value="$PROJECT_DIR$/5Gspeech/html/three.html" />
         <option value="$PROJECT_DIR$/5Gspeech/html/four.html" />
         <option value="$PROJECT_DIR$/5Gspeech/html/six.html" />
         <option value="$PROJECT_DIR$/5Gspeech/html/five.html" />
+        <option value="$PROJECT_DIR$/5Gspeech/css/style.css" />
       </list>
     </option>
   </component>
@@ -224,12 +222,12 @@
       <workItem from="1527502843689" duration="5919000" />
       <workItem from="1528191567930" duration="477000" />
       <workItem from="1528192048014" duration="159000" />
-      <workItem from="1528192231168" duration="15056000" />
+      <workItem from="1528192231168" duration="15424000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30108000" />
+    <option name="totallyTimeSpent" value="30476000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="23" width="1440" height="824" extended-state="0" />
@@ -566,14 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/5Gspeech/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="235" column="1" lean-forward="true" selection-start-line="235" selection-start-column="1" selection-end-line="235" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/5Gspeech/html/four.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -601,6 +591,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2088">
           <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5Gspeech/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
