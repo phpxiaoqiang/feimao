@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CHIC原醉</title>
+    <link rel="stylesheet" href="../static/style/index.css">
+    <style>
+        .kefu {
+            width: 76px;
+            position: fixed;
+            z-index: 99;
+            right: 20px;
+            bottom: 50px;
+        }
+        .kefu img {
+            width: 100%;
+        }
+        /*树洞detail*/
+        .qu-card {
+            background: #2B2E34;
+            border-radius: 4px;
+            color: #fff;
+            padding: 19px 12px 11px;
+            margin: 20px auto;
+            -webkit-box-shadow: 0 8px 13px rgba(43, 46, 52, .16);
+            box-shadow: 0 8px 13px rgba(43, 46, 52, .16);
+        }
+        .qu-txt {
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .qu-b {
+            text-align: right;
+            color: #C0C0C0;
+            font-size: 14px;
+            padding-top: 30px;
+        }
+        .an-card {
+            background: #FAFAFA;
+            border-radius: 2px;
+            padding: 17px 17px 7px;
+            margin: 10px auto;
+        }
+        .an-t {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            justify-content: space-between;
+            -ms-align-items: center;
+            align-items: center;
+        }
+        .an-t-l {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .an-t-l img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50px;
+        }
+        .an-t-l .nick {
+            color: #2C2C2C;
+            font-size: 16px;
+            margin-left: 6px;
+        }
+        .an-t-r {
+            color: #8A92A6;
+            font-size: 14px;
+            padding-right: 20px;
+            background-image: url(../static/img/heart-lo.png);
+            -webkit-background-size: 16px 14px;
+            background-size: 16px 14px;
+            background-position: right center;
+            background-repeat: no-repeat;
+        }
+        .an-t-r.active {
+            background-image: url(../static/img/heart-pink.png);
+        }
+        .an-txt {
+            font-size: 14px;
+            color: #2C2C2C;
+            line-height: 1.4;
+            padding: 9px 0 7px;
+        }
+        .an-date {
+            color: #CBCBCB;
+            font-size: 14px;
+            font-weight: 300;
+        }
+        .fix-bottom-btn {
+            text-align: center;
+            position: fixed;
+            background: #363636;
+            font-size: 18px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            color: #fff;
+            height: 50px;
+            line-height: 50px;
+        }
+        /*树洞detail-end*/
+    </style>
+</head>
+<body class="pt54 pb60">
+    <div class="top-menu">
+        <a href="" class="logo"></a>
+        <div class="top-menu-right">
+            <span class="search-btn"></span>
+            <div class="bread-menu-btn"><i></i><i></i><i></i></div>
+        </div>
+        <div class="bread-menu-panel pt54">
+            <a href="">首页</a>
+            <a href="">我的</a>
+        </div>
+    </div>
+    <div class="fix-bottom-btn">添加回答</div>
+
+    <div class="container mt30">
+        <div class="t-title">
+            <span>所有回答</span>
+        </div>
+        <div class="qu-card">
+            <div class="qu-txt">和情侣们分手之后该怎么办？该如何愉快的偷尝禁果？</div>
+            <div class="qu-b"><span>75条回答</span></div>
+        </div>
+        <div class="an-cards">
+            <div class="an-card">
+                <div class="an-t">
+                    <div class="an-t-l">
+                        <img src="../static/img/author.png" alt="">
+                        <div class="nick">cheeral</div>
+                    </div>
+                    <!-- active===heart-pink -->
+                    <div class="an-t-r active">
+                        <span>560</span>
+                    </div>
+                </div>
+                <div class="an-txt">
+                    评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论论评论评论评论论评论评论评论
+                </div>
+                <div class="an-date">2017/03/04</div>
+            </div>
+            <div class="an-card">
+                <div class="an-t">
+                    <div class="an-t-l">
+                        <img src="../static/img/author.png" alt="">
+                        <div class="nick">cheeral</div>
+                    </div>
+                    <!-- active===heart-pink -->
+                    <div class="an-t-r active">
+                        <span>560</span>
+                    </div>
+                </div>
+                <div class="an-txt">
+                    评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论论评论评论评论论评论评论评论
+                </div>
+                <div class="an-date">2017/03/04</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../static/vendor/jquery-3.1.1.min.js"></script>
+    <script src="../static/vendor/swiper-3.4.0.jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('.bread-menu-btn').on('click', function () {
+                $(this).toggleClass('active');
+                $('.top-menu').toggleClass('active');
+                $('.bread-menu-panel').toggleClass('active');
+            });
+            var mySwiper = new Swiper('#index-banner', {
+//                autoplay: 5000
+                pagination : '.swiper-pagination'
+            })
+            var classifySwiper = new Swiper('#classify-swiper', {
+                slidesPerView: 'auto',
+                spaceBetween: 18,
+            })
+        })
+    </script>
+</body>
+</html>

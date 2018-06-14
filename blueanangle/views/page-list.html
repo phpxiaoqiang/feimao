@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CHIC原醉</title>
+    <link rel="stylesheet" href="../static/style/index.css">
+</head>
+<body class="pt54 pb60">
+
+<div class="top-menu">
+    <a href="" class="logo"></a>
+    <div class="top-menu-right">
+        <span class="search-btn"></span>
+        <div class="bread-menu-btn"><i></i><i></i><i></i></div>
+    </div>
+    <div class="bread-menu-panel pt54">
+        <a href="">首页</a>
+        <a href="">我的</a>
+    </div>
+</div>
+
+<div class="container mt30">
+    <div class="t-title">TA的文章</div>
+    <div class="mt30">
+        <div class="page-list">
+            <div class="page-item">
+                <img src="../static/img/page.jpg" alt="">
+                <div class="page-item-text">
+                    <h3>旅行中如何优雅地发朋友圈？</h3>
+                    <p>你应该动用强大的左小脑将所有语言精简成两三句看似随口其实酝酿半小时内容。</p>
+                </div>
+            </div>
+            <div class="page-item">
+                <img src="../static/img/page.jpg" alt="">
+                <div class="page-item-text state2">
+                    <h3>旅行中如何优雅地发朋友圈？</h3>
+                    <p>你应该动用强大的左小脑将所有语言精简成两三句看似随口其实酝酿半小时内容。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../static/vendor/jquery-3.1.1.min.js"></script>
+<script>
+  $(function () {
+    $('.bread-menu-btn').on('click', function () {
+      $(this).toggleClass('active');
+      $('.top-menu').toggleClass('active');
+      $('.bread-menu-panel').toggleClass('active');
+    });
+  })
+</script>
+</body>
+</html>

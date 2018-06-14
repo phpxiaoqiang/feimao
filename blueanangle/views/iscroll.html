@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CHIC原醉</title>
+    <link rel="stylesheet" href="../static/style/normalize.css">
+</head>
+<style>
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        padding: 0;
+        list-style: none;
+        margin: 0;
+    }
+    .wrapper {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;/* 解决ios滑动不流畅问题 */
+    }
+    .chat-panel {
+        background: #ccc;
+        padding-bottom: 100px;
+    }
+    .chat-panel li {
+        padding: 20px;
+    }
+    .chat-panel li:nth-child(2n) {
+        background: #1ba1e2;
+    }
+    .chat-panel li:last-child {
+        background: #b71400;
+    }
+    .chat {
+        background: #000;
+        margin: 0;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+    }
+    .chat input {
+        width: 100%;
+        display: block;
+    }
+    .chat button {
+        width: 100px;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .scroll-wrap {
+
+    }
+    .chat-wrap {
+        position: fixed;
+        /*z-index: 9;*/
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+</style>
+<body>
+<div class="scroll-wrap">
+    <div class="wrapper" id="wrapper">
+        <ul class="chat-panel">
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+        </ul>
+    </div>
+    <div class="chat">
+        <input type="text" id="input" placeholder="chat">
+        <button id="send">发送</button>
+    </div>
+</div>
+<script src="../static/js/jquery.min.js"></script>
+<!--<script src="../static/vendor/iscroll.js"></script>-->
+<script>
+  $(function () {
+    var winHeight = $(window).innerHeight()
+    var input = $('#input')
+    var scrollToend
+    $('#send').on('click', function () {
+      $('.chat-panel').append('<li>' + input.val() + '</li>')
+      input.val('')
+    })
+    input.focus(function () {
+      scrollToend = setInterval(function () {
+        document.body.scrollTop = document.body.scrollHeight
+      }, 500)
+    })
+    input.blur(function () {
+      clearInterval(scrollToend)
+    })
+  })
+</script>
+</body>
+</html>

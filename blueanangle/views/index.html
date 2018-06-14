@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>蓝天小天使</title>
+    <link rel="stylesheet" href="../static/style/index.css">
+    <style>
+
+        .top-logo{color:#fff;font-size:14px;padding:10px;display:inline-block}
+        .top-menu { background: -webkit-linear-gradient(#518DE3, #5589E1); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(#518DE3, #5589E1); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(#518DE3, #5589E1); /* Firefox 3.6 - 15 */
+            background: linear-gradient(#518DE3, #5589E1); /* 标准的语法 */}
+        .bread-menu-panel{ background: -webkit-linear-gradient(#518DE3, #112680); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(#518DE3,#112680); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(#518DE3, #112680); /* Firefox 3.6 - 15 */
+            background: linear-gradient(#518DE3,#112680); /* 标准的语法 */}
+    </style>
+    <!--<link rel="stylesheet" href="../static/css/site.css">-->
+    <link rel="stylesheet" href="../static/css/style-index.css">
+    <link rel="stylesheet" href="../static/css/appoin.css">
+</head>
+<body class="pt54">
+
+    <!--<a href="tel:13520461173" class="kefu"><img src="../static/img/kefu.png" alt=""></a>-->
+
+    <div class="top-menu">
+        <!--<a href="" class="logo"></a>-->
+        <span class="top-logo">蓝天小天使</span>
+        <div class="top-menu-right">
+            <!--<span class="search-btn"></span>-->
+            <div class="bread-menu-btn"><i></i><i></i><i></i></div>
+        </div>
+        <div class="bread-menu-panel pt54">
+            <a href="">首页</a>
+            <a href="">我的</a>
+        </div>
+    </div>
+
+    <div class="swiper-container index-banner" id="index-banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="banner-img">
+                    <img src="../static/img/banner.jpg" alt="">
+                </div>
+                <div class="banner-text">
+                    <h2 class="main-title">TAKE YOU</h2>
+                    <p class="sub-title">All over the world kiss all the way</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="banner-img">
+                    <img src="../static/img/banner.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="banner-img">
+                    <img src="../static/img/banner.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="container mt60">
+        <h2 class="c-title"><span>学期卡</span> </h2>
+        <div class="media-list">
+            <div class="media-item">
+                <img src="../static/img/media.jpg" alt="">
+
+                <div class="media-item-text state1">
+                    <h3>如何优雅有效地撩到VC小哥哥？</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container block">
+        <div class="t-title">精品课程</div>
+        <div class="courses">
+             <a href="">
+                <div class="course">
+                    <img src="../static/img/banner.jpg" alt="">
+                    <div class="course-txt">
+                        <h3>来学习吧</h3>
+                        <p>孩子们</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="courses">
+            <a href="">
+                <div class="course">
+                    <img src="../static/img/banner.jpg" alt="">
+                    <div class="course-txt">
+                        <h3>来学习吧</h3>
+                        <p>孩子们</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="../static/vendor/jquery-3.1.1.min.js"></script>
+    <script src="../static/vendor/swiper-3.4.0.jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('.bread-menu-btn').on('click', function () {
+                $(this).toggleClass('active');
+                $('.top-menu').toggleClass('active');
+                $('.bread-menu-panel').toggleClass('active');
+            });
+            var mySwiper = new Swiper('#index-banner', {
+//                autoplay: 5000
+                pagination : '.swiper-pagination'
+            })
+            var classifySwiper = new Swiper('#classify-swiper', {
+                slidesPerView: 'auto',
+                spaceBetween: 18,
+            })
+        })
+    </script>
+</body>
+</html>

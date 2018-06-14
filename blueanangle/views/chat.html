@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CHIC原醉</title>
+    <link rel="stylesheet" href="../static/style/index.css">
+    <style>
+        html {
+            -webkit-overflow-scrolling: touch
+        }
+        .point {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: transparent;
+        }
+        .chat-wrap {
+            position: absolute;
+            top: 0;
+            left: 10px;
+            right: 10px;
+            bottom: 0;
+            overflow-y: scroll;
+        }
+        .chat_box {
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            overflow-y: scroll;
+            width: 100%;
+            padding-bottom: 100px;
+        }
+        .chat {
+            margin: 20px auto;
+            padding-bottom: 0;
+            position: initial;
+        }
+        .chat-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 10px;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .countdown {
+            left: 20px;
+            right: auto;
+        }
+        .icon-btn-wrap {
+            position: absolute;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            right: 10px;
+            bottom: 74px;
+        }
+        .icon-photo {
+            width: 30px;
+            margin: 0 10px;
+            height: 30px;
+        }
+        .icon-thumb {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+        }
+        .audio_change {
+            background: url(../static/img/audio-change.png) no-repeat left center / 40px 40px;
+            width: 42px;
+            height: 42px;
+            display: block;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        .chat-input {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            border: 0;
+            bottom: 20px;
+            -ms-align-items: center;
+            align-items: center;
+            padding-right: 20px;
+            padding: 0 20px;
+        }
+        .chat-input input {
+            border: 1px solid #E4E4E4;
+            height: 40px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            display: block;
+            text-indent: 10px;
+        }
+        .audio-record {
+            text-align: center;
+            color: #2F2F2F;
+            font-size: 14px;
+            background: #FCFCFC;
+            border: 1px solid #E4E4E4;
+            width: 90%;
+            border-radius: 2px;
+        }
+        .chat-text img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body class="pb60">
+
+<div class="container win_height">
+    <div class="chat-wrap">
+        <div class="chat_box" id="chat_box">
+            <div class="chat" id="chat">
+                <div class="chat-left chat-item">
+                    <img src="../static/img/chat-img.png" alt="" class="chat-img">
+                    <div class="chat-text"><img src="../static/img/media.jpg" alt=""></div>
+                </div>
+                <div class="chat-right chat-item">
+                    <img src="../static/img/chat-img.png" alt="" class="chat-img">
+                    <div class="chat-text"><img src="../static/img/media.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="countdown">59:45</span>
+    <div class="chat-bottom">
+        <div class="icon-btn-wrap">
+            <img src="../static/img/photo2.png" class="icon-photo"></img>
+            <img src="../static/img/thumb.png" class="icon-thumb"></img>
+        </div>
+        <div class="chat-input">
+            <div class="audio_change"></div>
+            <!-- <input type="text" id="chat_input" placeholder="输入您想咨询的内容的..."> -->
+            <div class="audio-record">按住说话</div>
+            <!-- <button id="send">发送</button> -->
+        </div>
+    </div>
+</div>
+<script src="../static/vendor/jquery-3.1.1.min.js"></script>
+<script>
+  $(function () {
+    // var $input = $('#chat_input')
+    var $box = $('#chat_box')
+    var boxH = $box.height()
+    var $chat = $('#chat')
+    var chat = document.getElementById('chat')
+    $input.on('focus', function () {
+      $('.chat-bottom').css({'transform': 'translateY(-24px)'})
+    })
+    $input.on('blur', function () {
+      $('.chat-bottom').css({'transform': 'translateY(0)'})
+    })
+    var observer = new MutationObserver(function (mutations) {
+      var contH= $chat.get(0).offsetHeight
+      $box.scrollTop(contH - boxH)
+    })
+    var config = { attributes: true, childList: true, characterData: true }
+    observer.observe(chat, config)
+  })
+</script>
+</body>
+</html>

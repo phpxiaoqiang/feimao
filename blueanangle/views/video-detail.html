@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CHIC原醉</title>
+    <link href="https://cdn.bootcss.com/video.js/6.3.3/video-js.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style/index.css">
+</head>
+<body class="pt54 pb60">
+
+    <div class="top-menu">
+        <a href="" class="logo"></a>
+        <div class="top-menu-right">
+            <span class="search-btn"></span>
+            <div class="bread-menu-btn"><i></i><i></i><i></i></div>
+        </div>
+        <div class="bread-menu-panel pt54">
+            <a href="">首页</a>
+            <a href="">我的</a>
+        </div>
+    </div>
+
+    <div class="video">
+        <video class="video video-js" id="my-video" preload="auto"
+               webkit-playsinline="true" playsinline="true" x-webkit-airplay="true"
+               x5-video-player-type="h5"
+               x5-video-player-fullscreen="true" x5-video-ignore-metadata="true" controls poster="../static/img/banner.jpg">
+            <source src="http://v.cdn.bb.bbwc.cn/bloomberg/2016/11/25/20161125161809984/20161125161809984_index.mp4">
+            <p class="vjs-no-js">浏览器版本过低<a href="http://videojs.com/html5-video-support/"
+                                           target="_blank">supports HTML5
+                video</a></p>
+        </video>
+    </div>      
+    <div class="video-title">
+        作为立志要把男朋友调教成带出去能亮瞎众人眼球、用狗粮代替大米
+    </div>
+    <div class="play-info">
+        <div class="play-info-l">
+            <span class="icon-play-s"></span>
+            <span class="look-num">222</span>
+        </div>
+        <div class="time">2017/03/04</div>
+    </div>  
+
+    <script src="https://cdn.bootcss.com/video.js/6.3.3/video.min.js"></script>
+    <script src="../static/vendor/jquery-3.1.1.min.js"></script>
+    <script>
+        $(function () {
+            $('.bread-menu-btn').on('click', function () {
+                $(this).toggleClass('active');
+                $('.top-menu').toggleClass('active');
+                $('.bread-menu-panel').toggleClass('active');
+            });
+
+            $('.agree').on('click', function () {
+                $(this).children('.check-icon').toggleClass('active')
+            });
+
+            $('.finish-btn').on('click', function() {
+              $('.form-modal').fadeIn();
+            });
+            $('.btn-close').on('click', function() {
+              $('.form-modal').fadeOut();
+            });
+
+            var myPlayer = videojs('my-video');
+            var whereYouAt = myPlayer.currentTime();
+        })
+    </script>
+</body>
+</html>
