@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学期卡</title>
+    <style>
+
+        .top-logo{color:#fff;font-size:14px;padding:10px;display:inline-block}
+        .top-menu { background: -webkit-linear-gradient(#518DE3, #5589E1); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(#518DE3, #5589E1); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(#518DE3, #5589E1); /* Firefox 3.6 - 15 */
+            background: linear-gradient(#518DE3, #5589E1); /* 标准的语法 */}
+        .bread-menu-panel{ background: -webkit-linear-gradient(#518DE3, #112680); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(#518DE3,#112680); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(#518DE3, #112680); /* Firefox 3.6 - 15 */
+            background: linear-gradient(#518DE3,#112680); /* 标准的语法 */}
+    </style>
+    <link rel="stylesheet" href="../static/style/index.css">
+    <link rel="stylesheet" href="../static/css/style-index.css">
+    <link rel="stylesheet" href="../static/css/appoin.css">
+</head>
+<body class="pt54">
+<div class="top-menu">
+    <!--<a href="" class="logo"></a>-->
+    <span class="top-logo">蓝天小天使</span>
+    <div class="top-menu-right">
+        <!--<span class="search-btn"></span>-->
+        <div class="bread-menu-btn"><i></i><i></i><i></i></div>
+    </div>
+    <div class="bread-menu-panel pt54">
+        <a href="">首页</a>
+        <a href="">我的</a>
+    </div>
+</div>
+<div class="container mt30">
+    <div class="t-title">
+        学期卡列表页
+    </div>
+
+        <div class="swiper-slide v-card" style="margin: 20px auto">
+    <a href="/bigv/detail">
+        <div class="v-title">
+            <h3>春苗班小课堂可以交费了</h3>
+            <p>你经常会遇见的问题</p>
+        </div>
+        <img src="../static/img/media2.jpg" alt="">
+    </a>
+</div>
+    <div class="swiper-slide v-card" style="margin: 20px auto">
+        <a href="/bigv/detail">
+            <div class="v-title">
+                <h3>春苗班小课堂可以交费了</h3>
+                <p>你经常会遇见的问题</p>
+            </div>
+            <img src="../static/img/media2.jpg" alt="">
+        </a>
+    </div>
+</div>
+
+<script src="../static/vendor/jquery-3.1.1.min.js"></script>
+<script src="../static/vendor/swiper-3.4.0.jquery.min.js"></script>
+<script>
+    $(function () {
+        $('.bread-menu-btn').on('click', function () {
+            $(this).toggleClass('active');
+            $('.top-menu').toggleClass('active');
+            $('.bread-menu-panel').toggleClass('active');
+        });
+        var mySwiper = new Swiper('#index-banner', {
+//                autoplay: 5000
+            pagination : '.swiper-pagination'
+        })
+        var classifySwiper = new Swiper('#classify-swiper', {
+            slidesPerView: 'auto',
+            spaceBetween: 18,
+        })
+    })
+</script>
+</body>
+</html>
