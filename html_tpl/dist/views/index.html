@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CHIC原醉</title>
+    <link rel="stylesheet" href="../static/style/index.css">
+</head>
+<body class="pt54">
+
+    <div class="top-menu">
+        <a href="" class="logo"></a>
+        <div class="top-menu-right">
+            <span class="search-btn"></span>
+            <div class="bread-menu-btn"><i></i><i></i><i></i></div>
+        </div>
+        <div class="bread-menu-panel pt54">
+            <a href="">首页</a>
+            <a href="">我的</a>
+        </div>
+    </div>
+
+    <div class="swiper-container index-banner" id="index-banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="banner-img">
+                    <img src="../static/img/banner.jpg" alt="">
+                </div>
+                <div class="banner-text">
+                    <h2 class="main-title">TAKE YOU</h2>
+                    <p class="sub-title">All over the world kiss all the way</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="banner-img">
+                    <img src="../static/img/banner.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="banner-img">
+                    <img src="../static/img/banner.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="classify-wrap">
+        <div class="container"><h2 class="c-title">咨询分类</h2></div>
+        <div class="swiper-container classify-swiper" id="classify-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="classify-item">
+                        <img src="../static/img/classify.png" alt="">
+                        <div class="classify-text">
+                            <h4>撩汉法则</h4>
+                            <p>The law of the law</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="classify-item">
+                        <img src="../static/img/classify.png" alt="">
+                        <div class="classify-text">
+                            <h4>撩汉法则</h4>
+                            <p>The law of the law</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="classify-item">
+                        <img src="../static/img/classify.png" alt="">
+                        <div class="classify-text">
+                            <h4>撩汉法则</h4>
+                            <p>The law of the law</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="classify-item">
+                        <img src="../static/img/classify.png" alt="">
+                        <div class="classify-text">
+                            <h4>撩汉法则</h4>
+                            <p>The law of the law</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt30">
+        <h2 class="c-title"><span>文章精选</span> <a href="">more</a></h2>
+        <div class="page-list">
+            <div class="page-item">
+                <img src="../static/img/page.jpg" alt="">
+                <div class="page-item-text">
+                    <h3>旅行中如何优雅地发朋友圈？</h3>
+                    <p>你应该动用强大的左小脑将所有语言精简成两三句看似随口其实酝酿半小时内容。</p>
+                </div>
+            </div>
+            <div class="page-item">
+                <img src="../static/img/page.jpg" alt="">
+                <div class="page-item-text state2">
+                    <h3>旅行中如何优雅地发朋友圈？</h3>
+                    <p>你应该动用强大的左小脑将所有语言精简成两三句看似随口其实酝酿半小时内容。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt60">
+        <h2 class="c-title"><span>影音内容</span> <a href="">more</a></h2>
+        <div class="media-list">
+            <div class="media-item">
+                <img src="../static/img/media.jpg" alt="">
+                <div class="float-tab">
+                    <span class="icon-play-s"></span>
+                    <span class="look-num">2029</span>
+                </div>
+                <div class="media-item-text state1">
+                    <h3>如何优雅有效地撩到VC小哥哥？</h3>
+                </div>
+            </div>
+            <div class="media-item">
+                <img src="../static/img/media.jpg" alt="">
+                <div class="float-tab">
+                    <span class="icon-play-s"></span>
+                    <span class="look-num">2029</span>
+                </div>
+                <div class="media-item-text state2">
+                    <h3>FELLING</h3>
+                    <p>HOW TO FORM A UNIQUE STYLE OF SELF?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../static/vendor/jquery-3.1.1.min.js"></script>
+    <script src="../static/vendor/swiper-3.4.0.jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('.bread-menu-btn').on('click', function () {
+                $(this).toggleClass('active');
+                $('.top-menu').toggleClass('active');
+                $('.bread-menu-panel').toggleClass('active');
+            });
+            var mySwiper = new Swiper('#index-banner', {
+//                autoplay: 5000
+                pagination : '.swiper-pagination'
+            })
+            var classifySwiper = new Swiper('#classify-swiper', {
+                slidesPerView: 'auto',
+                spaceBetween: 18,
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CHIC原醉</title>
+    <link rel="stylesheet" href="../static/style/index.css">
+</head>
+<body class="pt54 pb60">
+
+    <div class="top-menu">
+        <a href="" class="logo"></a>
+        <div class="top-menu-right">
+            <span class="search-btn"></span>
+            <div class="bread-menu-btn"><i></i><i></i><i></i></div>
+        </div>
+        <div class="bread-menu-panel pt54">
+            <a href="">首页</a>
+            <a href="">我的</a>
+        </div>
+    </div>
+
+    <div class="container mt30">
+        <div class="t-title">Ice Chueng</div>
+
+        <div class="a-info-t">
+            <div class="img"><img src="../static/img/author-m.png" alt=""></div>
+            <div class="a-info-r">
+                <h4>咨询方式</h4>
+                <p>每60分钟一次</p>
+            </div>
+        </div>
+
+        <div class="order-info-2">
+            <div class="order-info-item">
+                <input type="radio" name="order-type" id="text">
+                <label for="text">
+                    <strong>文字咨询</strong>
+                    <span>000.0/次</span>
+                </label>
+            </div>
+            <div class="order-info-item">
+                <input type="radio" name="order-type" id="audio">
+                <label for="audio">
+                    <strong>语音咨询</strong>
+                    <span>000.0/次</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="order-form">
+            <select name="" id="" class="order-form-select">
+                <option value="">预约时间</option>
+                <option value="">60分钟</option>
+                <option value="">60分钟</option>
+            </select>
+            <div class="order-info-list">
+                <div class="order-form-item">
+                    <span class="o-l">金额</span>
+                    <span class="o-r">300</span>
+                </div>
+                <div class="order-form-item">
+                    <span class="o-l">基本资料（仅专家可见）</span>
+                </div>
+                <div class="order-form-item">
+                    <span class="o-l">你的称呼</span>
+                    <div class="o-r"><input type="text"></div>
+                </div>
+                <div class="order-form-item">
+                    <span class="o-l">年龄</span>
+                    <span class="o-r"><input type="number"></span>
+                </div>
+                <div class="order-form-item">
+                    <span class="o-l">性别</span>
+                    <div class="sex-radio o-r">
+                        <input type="radio" name="sex" id="male" checked><label for="male">男</label>
+                        <input type="radio" name="sex" id="female"><label for="female">女</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-textarea">
+                <h4>问题描述（仅专家可见）</h4>
+                <div class="text-area">
+                    <textarea name="" id="comment_text" placeholder="请描述您需要咨询的内容..."></textarea>
+                    <div class="num"><span id="text_num">0</span>/50</div>
+                </div>
+            </div>
+            <div class="agree">
+                <span class="check-icon"></span><a href="">同意《心理咨询预约协议》</a>
+            </div>
+            <button class="finish-btn">完成</button>
+        </div>
+    </div>
+
+    <div class="form-modal">
+        <div class="modal-box">
+            <span class="btn-close"></span>
+            <div class="t-title">订单信息</div>
+            <div class="form-info">
+                <div class="form-info-item">
+                    <span class="form-info-key">预约编号</span>
+                    <span class="form-info-value">0000002</span>
+                </div>
+                <div class="form-info-item">
+                    <span class="form-info-key">预约编号</span>
+                    <span class="form-info-value">0000002</span>
+                </div>
+                <div class="form-info-item">
+                    <span class="form-info-key">预约编号</span>
+                    <span class="form-info-value">0000002</span>
+                </div>
+                <div class="form-info-item">
+                    <span class="form-info-key">预约编号</span>
+                    <span class="form-info-value">0000002</span>
+                </div>
+            </div>
+            <button class="btn-black">确认支付</button>
+        </div>
+    </div>
+
+    <script src="../static/vendor/jquery-3.1.1.min.js"></script>
+    <script>
+        $(function () {
+            $('.bread-menu-btn').on('click', function () {
+                $(this).toggleClass('active');
+                $('.top-menu').toggleClass('active');
+                $('.bread-menu-panel').toggleClass('active');
+            });
+
+            $('.agree').on('click', function () {
+                $(this).children('.check-icon').toggleClass('active')
+            });
+
+            $('.finish-btn').on('click', function() {
+              $('.form-modal').fadeIn();
+            });
+            $('.btn-close').on('click', function() {
+              $('.form-modal').fadeOut();
+            });
+
+            $('#comment_text').on('propertychange input', function() {
+                var $this = $(this),  
+                    _val = $this.val(),  
+                    count = ""
+                if (_val.length > 50) {
+                    $this.val(_val.substring(0, 50))
+                }  
+                count = 50 - $this.val().length;  
+                $("#text_num").text(count);  
+            })
+
+        })
+    </script>
+</body>
+</html>

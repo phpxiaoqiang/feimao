@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CHIC原醉</title>
+    <link rel="stylesheet" href="../static/style/index.css">
+</head>
+<body class="pt54 pb60">
+
+<div class="top-menu">
+    <a href="" class="logo"></a>
+    <div class="top-menu-right">
+        <span class="search-btn"></span>
+        <div class="bread-menu-btn"><i></i><i></i><i></i></div>
+    </div>
+    <div class="bread-menu-panel pt54">
+        <a href="">首页</a>
+        <a href="">我的</a>
+    </div>
+</div>
+
+<div class="container mt30">
+    <div class="t-title">支付成功</div>
+    <div class="pay-success">
+        <span class="icon-sucess"></span>
+        <a href="" class="btn-dark">查看订单</a>
+    </div>
+</div>
+
+<script src="../static/vendor/jquery-3.1.1.min.js"></script>
+<script>
+  $(function () {
+    $('.bread-menu-btn').on('click', function () {
+      $(this).toggleClass('active');
+      $('.top-menu').toggleClass('active');
+      $('.bread-menu-panel').toggleClass('active');
+    });
+  })
+</script>
+</body>
+</html>

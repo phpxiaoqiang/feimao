@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CHIC原醉</title>
+    <link rel="stylesheet" href="../static/style/index.css">
+</head>
+<body class="pt54 pb60">
+
+    <div class="top-menu">
+        <a href="" class="logo"></a>
+        <div class="top-menu-right">
+            <span class="search-btn"></span>
+            <div class="bread-menu-btn"><i></i><i></i><i></i></div>
+        </div>
+        <div class="bread-menu-panel pt54">
+            <a href="">首页</a>
+            <a href="">我的</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="chat">
+            <div class="chat-left chat-item">
+                <img src="../static/img/chat-img.png" alt="" class="chat-img">
+                <div class="chat-text">您好，请问有什么想咨询的？</div>
+            </div>
+            <div class="chat-right chat-item">
+                <img src="../static/img/chat-img.png" alt="" class="chat-img">
+                <div class="chat-text">您好，请问有什么想咨询的？</div>
+            </div>
+            <div class="chat-left chat-item">
+                <img src="../static/img/chat-img.png" alt="" class="chat-img">
+                <div class="chat-text">您好，请问有什么想咨询的？</div>
+            </div>
+            <div class="chat-right chat-item">
+                <img src="../static/img/chat-img.png" alt="" class="chat-img">
+                <div class="chat-text">您好，请问有什么想咨询的？</div>
+            </div>
+            <div class="chat-left chat-item">
+                <img src="../static/img/chat-img.png" alt="" class="chat-img">
+                <div class="chat-text">您好，请问有什么想咨询的？</div>
+            </div>
+            <div class="chat-right chat-item">
+                <img src="../static/img/chat-img.png" alt="" class="chat-img">
+                <div class="chat-text">您好，请问有什么想咨询的？</div>
+            </div>
+            <div class="chat-left chat-item">
+                <img src="../static/img/chat-img.png" alt="" class="chat-img">
+                <div class="chat-text">您好，请问有什么想咨询的？</div>
+            </div>
+            <div class="chat-right chat-item">
+                <img src="../static/img/chat-img.png" alt="" class="chat-img">
+                <div class="chat-text">您好，请问有什么想咨询的？</div>
+            </div>
+            <div class="chat-left chat-item">
+                <img src="../static/img/chat-img.png" alt="" class="chat-img">
+                <div class="chat-text">您好，请问有什么想咨询的？</div>
+            </div>
+            <div class="chat-right chat-item">
+                <img src="../static/img/chat-img.png" alt="" class="chat-img">
+                <div class="chat-text">您好，请问有什么想咨询的？</div>
+            </div>
+            <div class="chat-left chat-item">
+                <img src="../static/img/chat-img.png" alt="" class="chat-img">
+                <div class="chat-text">您好，请问有什么想咨询的？</div>
+            </div>
+            <div class="chat-right chat-item">
+                <img src="../static/img/chat-img.png" alt="" class="chat-img">
+                <div class="chat-text">您好，请问有什么想咨询的？</div>
+            </div>
+            <div class="chat-left chat-item">
+                <img src="../static/img/chat-img.png" alt="" class="chat-img">
+                <div class="chat-text">您好，请问有什么想咨询的？</div>
+            </div>
+            <div class="chat-right chat-item">
+                <img src="../static/img/chat-img.png" alt="" class="chat-img">
+                <div class="chat-text">您好，请问有什么想咨询的？</div>
+            </div>
+        </div>
+        <span class="countdown">59:45</span>
+        <div class="chat-bottom">
+            <div class="chat-input">
+                <input type="text" id="chat_input" placeholder="输入您想咨询的内容的...">
+                <button>发送</button>
+            </div>
+                <div style="height: 20px"></div>
+        </div>
+    </div>
+
+    <script src="../static/vendor/jquery-3.1.1.min.js"></script>
+    <script>
+      $(function () {
+        $('.bread-menu-btn').on('click', function () {
+          $(this).toggleClass('active');
+          $('.top-menu').toggleClass('active');
+          $('.bread-menu-panel').toggleClass('active');
+        });
+
+        var lastChat = $('.chat-item:last-child').position().top
+        console.log(lastChat)
+        $('#chat_input').on('focus', function() {
+            $(document).keydown(function(e) {
+                if(e.keyCode == 13) {
+                    $('.chat').append('Some text')
+                    setTimeout(function() {
+                        var h = $(document).height()-$(window).height();
+                        $(document).scrollTop(h);
+                    }, 300)
+                    $(body).click();
+                }
+            })
+            $('.chat-bottom').css({
+                bottom: '20px'
+            });
+            $('.countdown').css({
+                bottom: '80px'
+            });
+        })
+        $('#chat_input').on('blur', function() {
+            $('.chat-bottom').css({
+                bottom: '0'
+            });
+            $('.countdown').css({
+                bottom: '60px'
+            });
+        })
+      })
+    </script>
+</body>
+</html>

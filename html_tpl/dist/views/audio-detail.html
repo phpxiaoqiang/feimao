@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CHIC原醉</title>
+    <link rel="stylesheet" href="../static/style/index.css">
+    <script src="../static/vendor/jquery-3.1.1.min.js"></script>
+    <script>
+        /*
+            iOS浏览BUG修复
+            by @mathias, @cheeaun and @jdalton
+        */
+        (function(doc){var addEvent='addEventListener',type='gesturestart',qsa='querySelectorAll',scales=[1,1],meta=qsa in doc?doc[qsa]('meta[name=viewport]'):[];function fix(){meta.content='width=device-width,minimum-scale='+scales[0]+',maximum-scale='+scales[1];doc.removeEventListener(type,fix,true);}if((meta=meta[meta.length-1])&&addEvent in doc){fix();scales=[.25,1.6];doc[addEvent](type,fix,true);}}(document));
+    </script>
+</head>
+<body class="pt54 pb60">
+
+    <div class="top-menu">
+        <a href="" class="logo"></a>
+        <div class="top-menu-right">
+            <span class="search-btn"></span>
+            <div class="bread-menu-btn"><i></i><i></i><i></i></div>
+        </div>
+        <div class="bread-menu-panel pt54">
+            <a href="">首页</a>
+            <a href="">我的</a>
+        </div>
+    </div>
+
+    <!-- <div class="audio">
+        <div class="img"><img src="../static/img/banner.jpg" alt=""></div>
+        <audio id="myaudio" src="http://www.jq22.com/demo/audiojs20161020/jq22com.mp3"></audio>
+    </div> -->
+
+    <div class="htmleaf-content bgcolor-3 audio">
+        <div class="img"><img src="../static/img/banner.jpg" alt=""></div>
+        <div id="wrapper">
+            <audio src="http://www.jq22.com/demo/audiojs20161020/jq22com.mp3" preload="auto" controls></audio>
+            <script src="../static/vendor/audio.min.js"></script>
+            <script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
+        </div>
+    </div>
+    <div class="video-title">
+        作为立志要把男朋友调教成带出去能亮瞎众人眼球、用狗粮代替大米
+    </div>
+    <div class="play-info">
+        <div class="play-info-l">
+            <span class="icon-play-s"></span>
+            <span class="look-num">222</span>
+        </div>
+        <div class="time">2017/03/04</div>
+    </div>  
+
+    <script>
+        $(function () {
+            $('.bread-menu-btn').on('click', function () {
+                $(this).toggleClass('active');
+                $('.top-menu').toggleClass('active');
+                $('.bread-menu-panel').toggleClass('active');
+            });
+
+            $('.agree').on('click', function () {
+                $(this).children('.check-icon').toggleClass('active')
+            });
+
+            $('.finish-btn').on('click', function() {
+              $('.form-modal').fadeIn();
+            });
+            $('.btn-close').on('click', function() {
+              $('.form-modal').fadeOut();
+            });
+        })
+
+    </script>
+</body>
+</html>

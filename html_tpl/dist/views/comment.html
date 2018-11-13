@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CHIC原醉</title>
+    <link rel="stylesheet" href="../static/style/index.css">
+</head>
+<body class="pt54 pb60">
+
+<div class="top-menu">
+    <a href="" class="logo"></a>
+    <div class="top-menu-right">
+        <span class="search-btn"></span>
+        <div class="bread-menu-btn"><i></i><i></i><i></i></div>
+    </div>
+    <div class="bread-menu-panel pt54">
+        <a href="">首页</a>
+        <a href="">我的</a>
+    </div>
+</div>
+
+<div class="container mt30">
+    <div class="order-box">
+        <div class="order-box-flex">
+            <div class="img"><img src="../static/img/author.png" alt=""></div>
+            <div class="order-box-r">
+                <h4>Ice Chueng</h4>
+                <p>青少年心理咨询专家，资深神经症治疗专家。90年代，在...</p>
+            </div>
+        </div>
+        <div class="star-wrap">
+            <span>评价满意度</span>
+            <div class="star-list">
+                <span class="star active"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+            </div>
+        </div>
+    </div>
+    <div class="comment-tag">
+        <div class="tag-item">专业度很高</div>
+        <div class="tag-item">专业度很高</div>
+        <div class="tag-item active">专业度很高 <span class="heart">23</span> </div>
+        <div class="tag-item">专业度很高</div>
+    </div>
+</div>
+<div class="tab-switch">
+    <em class="tab">全部</em>
+    <em class="tab active">最新</em>
+</div>
+<div class="container">
+    <div class="comment-list">
+        <div class="comment-item">
+            <div class="comment-item-top">
+                <div class="img"><img src="../static/img/chat-img.png" alt=""></div>
+                <div class="right">
+                    <span class="name">Ice Chueng</span>
+                    <span class="time">2017/03/04</span>
+                </div>
+            </div>
+            <p class="comment-text">作为立志要把男朋友调教成带出去能亮瞎众人眼球、用狗粮代替大米以缓解人类粮食危机的我来说，经过小范围个体实验。</p>
+        </div>
+    </div>
+    <div class="form-textarea">
+        <h4>问题描述（仅专家可见）</h4>
+        <div class="text-area">
+            <textarea name="" id="" placeholder="请描述您需要咨询的内容..."></textarea>
+        </div>
+    </div>
+    <button class="finish-btn">完成</button>
+</div>
+
+<div class="form-modal">
+
+</div>
+
+<script src="../static/vendor/jquery-3.1.1.min.js"></script>
+<script>
+  $(function () {
+    $('.bread-menu-btn').on('click', function () {
+      $(this).toggleClass('active');
+      $('.top-menu').toggleClass('active');
+      $('.bread-menu-panel').toggleClass('active');
+    });
+  })
+</script>
+</body>
+</html>
