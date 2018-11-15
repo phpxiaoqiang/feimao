@@ -1,119 +1,128 @@
-<?php
+    <!-- end header -->
+    <section id="banner">
 
-/* @var $this yii\web\View */
-use yii\widgets\LinkPager;
-$this->title = '首页';
-?>
-<div class="container block">
-    <div class="t-title">精品课程</div>
-    <div class="courses">
-        <?php foreach ($model as $item): ?>
-            <a href="/post/detail?id=<?= $item->id ?>">
-                <div class="course">
-                    <img src="<?= $item->pic ?>" alt="">
-                    <div class="course-txt">
-                        <h3><?= $item->title; ?></h3>
-                        <p> <?= $item->desc; ?></p>
+        <!-- Slider -->
+        <div id="main-slider" class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="img/slides/1.jpg" alt="" />
+                    <div class="flex-caption">
+                        <h3>您的移动互联网专家</h3>
+                        <p>成功取决于创意</p>
+
+                    </div>
+                </li>
+                <li>
+                    <img src="img/slides/2.jpg" alt="" />
+                    <div class="flex-caption">
+                        <h3>我们用交付质量说话 </h3>
+                        <p>竭力祝您成功</p>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- end slider -->
+    </section>
+    <section id="content">
+        <div class="container">
+            <div class="row" >
+                <div class="col-md-12">
+                    <div class="aligncenter" style="padding-bottom: 20px"><h2 class="aligncenter">工作流程
+                        </h2>用心提升产品价值，专注打造行业精品 <br/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4 info-blocks">
+                    <i class="icon-info-blocks material-icons">filter_drama</i>
+                    <div class="info-blocks-in">
+                        <h3>需求评估</h3>
+                        <p>产品经理通过前期与客户的需求沟通、梳理以及项目分析，量身打造最佳解决方案。</p>
                     </div>
                 </div>
-            </a>
-        <?php endforeach; ?>
-    </div>
-</div>
+                <div class="col-sm-4 info-blocks">
+                    <i class="icon-info-blocks material-icons">input</i>
+                    <div class="info-blocks-in">
+                        <h3>项目原型</h3>
+                        <p>产品经理根据客户的想法转化为脑图、线框图或原型图，细化客户需求并以更清晰的方式推进项目</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 info-blocks">
+                    <i class="icon-info-blocks material-icons">power_settings_new</i>
+                    <div class="info-blocks-in">
+                        <h3>视觉设计</h3>
+                        <p>设计师根据原型需求转化为初稿，根据客户和用户反馈调整完善设计稿，呈现完美交互效果。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 info-blocks">
+                    <i class="icon-info-blocks material-icons">chat_bubble_outline</i>
+                    <div class="info-blocks-in">
+                        <h3>全栈研发</h3>
+                        <p>工程师根据产品需求和设计稿进行技术架构、数据库设计。逐一实现后台所有功能。</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 info-blocks">
+                    <i class="icon-info-blocks material-icons">repeat</i>
+                    <div class="info-blocks-in">
+                        <h3>集成部署</h3>
+                        <p>测试工程师通过测试和验收合格代码，通过自动化编译部署到生产环境，后续可持续迭代项目。</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 info-blocks">
+                    <i class="icon-info-blocks material-icons">tab_unselected</i>
+                    <div class="info-blocks-in">
+                        <h3>维护监控
+                        </h3>
+                        <p>提供7*24小时安全监控，在第一时间内提供技术支持、故障修复。
 
-<div class="loading" style="display: none;"><img src="/media/img/Reload.gif" alt=""></div>
-<button id="next" class="next-btn" style="display: none">点击加载下一页</button>
-<p class="loading-finish">已全部加载</p>
-<?= LinkPager::widget([
-    'pagination' => $pages,
-    'nextPageLabel' => false,
-    'prevPageLabel' => false,
-    'hideOnSinglePage' => false,
-]);
-?>
-</div>
-<style>
-    .pagination{
-        display: none;
-    }
-    .loading {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
-    .loading img {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
-    .next-btn {
-        display: block;
-        margin: 0 auto 20px;
-        border: 0;
-        font-size: 14px;
-        width: 200px;
-        height: 40px;
-        color: #fff;
-        background: rgb(8, 11, 20);
-    }
-    .loading-finish {
-        text-align: center;
-        font-size: 14px;
-        color: #999;
-        margin: 20px auto;
-        display: none;
-        padding-bottom: 20px;
-    }
-</style>
-<script>
-    $(function () {
-        var total = $('.pagination li').length;
-        var currentPageIndex = 0;
-        // $(document).on('click', '.pagination a', function (e) {
-        //     e.preventDefault();
-        //     var url = $(this).attr('href');
-        //     $.get(url, function (msg) {
-        //         $('.container').append(msg);
-        //     });
-        // });
+                        </p></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        if(total <= 1){
-            $('#next').hide();
-            $('.loading-finish').show();
-            if (total === 0) {
-                $('.loading-finish').text('已全部加载')
-            }
-        }
+    <section class="section-padding gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <h2>公司介绍</h2>
+                        <p> 我们是一家专注用户体验设计与互联网产品研发、孵化的公司。服务范围包括：交互原型设计、产品视觉设计、产品研发、迭代、系统维护等。<br>我们的价值与宗旨是与客户一起量身打造最适合的产品，用有价值的产品真正帮助到企业的成长</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="about-text">
+                        <p>我们是热爱互联网的极客，对产品、体验、设计和技术都有极致的追求，我们的成员由资深的产品、UE和研发工程师组成。 专注，经验，信任，责任感，对细节的尊重，对创新的挑战是我们的关键词，专注打造行业精品。</p>
+                        <ul class="withArrow">
+                            <li><span class="fa fa-angle-right"></span> PC端+手机端多终端网站适配，中英文多种语言支持
+                            </li>
+                            <li><span class="fa fa-angle-right"></span> CMS网站内容管理系统、 CRM系统软件、ERP系统等
+                            </li>
+                            <li><span class="fa fa-angle-right"></span> 基于微信公众号及小程序体系进行深度的开发，及H5营销活动策划及开发
+                            </li>
+                            <li><span class="fa fa-angle-right"></span> APP客户端，苹果系统及安卓系统原生开发，H5混合式开发，后台服务端开发
+                            </li>
+                        </ul>
+                        <a href="/index/service" class="btn btn-primary waves-effect waves-dark">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="about-image">
+                        <img src="img/about.jpg" alt="About Images">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        $(window).scroll(function() {
-            if (($(window).scrollTop() + $(window).height() > $(document).height() - 1)) {
-                console.log(currentPageIndex)
-                if(currentPageIndex + 1 < total){
-                    $('#next').click()
-                }
-            }
-        });
 
-        $('#next').on('click',function () {
-            $('.loading').show();
-            var _this = $(this);
-            currentPageIndex++;
-            var url = $($('.pagination a')[currentPageIndex]).attr('href');
-            $.get(url, function (msg) {
-                $('.container').append(msg);
-                $('.loading').hide();
-                if(currentPageIndex+1 === total){
-                    // _this.hide()
-                    $('.loading-finish').show();
-                    $('.loading').hide();
-                }
-            });
-        })
-    })
-</script>
+
+
+
+
+

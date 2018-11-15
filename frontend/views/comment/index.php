@@ -1,179 +1,188 @@
-<?php
- $this->title = '评价('.$dataCount.')';
-use yii\helpers\Html;
-use frontend\models\Wxuser;
-use yii\widgets\LinkPager;
-use common\models\CounselorCommentlabel;
-?>
-<div class="container mt30">
-    <div class="t-title">评价</div>
-    <a href="/counselor/detail?id=<?=$_GET['id']?>">
-        <div class="order-box author-item comment-box">
-            <span class="border-left"></span>
-            <span class="border-right"></span>
-            <div class="author-por">
-                <div class="author-img"><img src="<?=$res->avatar?>" alt=""></div>
-                <div class="author-right">
-                    <div class="author-right_1">
-                        <span class="name"><?=$res->name?></span>
-                    </div>
-                    <p class="author-right_text"><?=$res->desc?></p>
+<div id="wrapper">
+    <!-- start header -->
+    <header>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"/></a>
                 </div>
-            </div>
-            <div class="star-wrap">
-                <span>评价满意度</span>
-                <div class="star-list">
-                    <?php for ($i=0;$i<$score;$i++){?>
-                    <span class="star active"></span>
-                    <?php }
-                        $rema =5-$score;
-                    for ($i=0;$i<$rema;$i++){
-                    ?>
-                        <span class="star "></span>
-                    <?php }?>
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+                        <li><a class="waves-effect waves-dark" href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">About Us <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="waves-effect waves-dark" href="about.html">Company</a></li>
+                                <li><a class="waves-effect waves-dark" href="#">Our Team</a></li>
+                                <li><a class="waves-effect waves-dark" href="#">News</a></li>
+                                <li><a class="waves-effect waves-dark" href="#">Investors</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="services.html" class="waves-effect waves-dark">Services</a></li>
+                        <li><a class="waves-effect waves-dark" href="portfolio.html">Portfolio</a></li>
+                        <li><a class="waves-effect waves-dark" href="pricing.html">Pricing</a></li>
+                        <li><a class="waves-effect waves-dark" href="contact.html">Contact</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </a>
-    <div class="comment-tag clearfloat">
-        <? if (!empty($labelComment)){?>
-        <?php foreach ($labelComment as $item): ?>
-            <span class="tag-item active">
-                <?=$item['name']?>
-                <span class="heart"><?=$item['cou']?></span>
-            </span>
-        <?php endforeach; ?>
-        <? }?>
-<!--        <span class="tag-item">客观理智</span>-->
-<!--        <span class="tag-item">声音温柔</span>-->
-<!--        <span class="tag-item active">善于倾听 <span class="heart">23</span> </span>-->
-<!--        <span class="tag-item">非常专业</span>-->
-<!--        <span class="tag-item">态度很好</span>-->
-<!--        <span class="tag-item">很有收获</span>-->
-<!--        <span class="tag-item">回复不及时</span>-->
-<!--        <span class="tag-item">回复很快</span>-->
-<!--        <span class="tag-item">专业度低</span>-->
-<!--        <span class="tag-item">态度差</span>-->
+    </header><!-- end header -->
+    <section id="inner-headline">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="pageTitle">Services</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="content">
+        <div class="container content">
+            <!-- Service Blcoks -->
 
-    </div>
-</div>
-<div class="tab-switch">
-    <em class="tab <?=!empty($_GET['new'])?'':'active'?>" onclick="window.location.href='/comment/index?id=<?=$_GET['id']?>'">全部</em>
-    <em class="tab  <?=!empty($_GET['new'])?'active':''?>" onclick="window.location.href='/comment/index?id=<?=$_GET['id']?>&new=yes'">最新</em>
-</div>
-<div class="comment-container">
-    <div class="comment-list container" id="container_id">
-        <?php foreach ($model as $item): ?>
-            <?if($item['content']) :?>
-                <div class="comment-item">
-                    <div class="comment-item-top">
-                        <div class="img"><img src="<?=$item['headimgurl']?>" alt=""></div>
-                        <div class="right">
-                            <span class="name" style="font-weight: bold;"><?=$item['nickname']?></span>
-                            <span class="time"><?php $time = strtotime($item['created_at']); echo date('Y/m/d',$time)?></span>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="about-logo">
+                        <h3>Our Best <span class="color">Services</span></h3>
+                        <p>Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas</p>
+                        <p>Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="skill-home"> <div class="skill-home-solid clearfix">
+                        <div class="col-md-3 text-center">
+                            <span class="icons c1"><i class="fa fa-book"></i></span> <div class="box-area">
+                                <h3>Web Desiging</h3> <p>Lorem ipsum dolor sitamet, consec tetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident</p></div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <span class="icons c2"><i class="fa fa-users"></i></span> <div class="box-area">
+                                <h3>E-Commerce</h3> <p>Lorem ipsum dolor sitamet, consec tetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident</p></div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <span class="icons c3"><i class="fa fa-trophy"></i></span> <div class="box-area">
+                                <h3>Quality</h3> <p>Lorem ipsum dolor sitamet, consec tetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident</p></div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <span class="icons c4"><i class="fa fa-globe"></i></span> <div class="box-area">
+                                <h3>Mobile App</h3> <p>Lorem ipsum dolor sitamet, consec tetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident</p>
+                            </div></div>
+                    </div></div>
+            </div>
+            <!-- Info Blcoks -->
+            <div class="row">
+                <div class="col-sm-4 info-blocks">
+                    <i class="icon-info-blocks fa fa-bell-o"></i>
+                    <div class="info-blocks-in">
+                        <h3>Awesome Design</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 info-blocks">
+                    <i class="icon-info-blocks fa fa-hdd-o"></i>
+                    <div class="info-blocks-in">
+                        <h3>FontAwesome</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 info-blocks">
+                    <i class="icon-info-blocks fa fa-lightbulb-o"></i>
+                    <div class="info-blocks-in">
+                        <h3>Bootstrap</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End Info Blcoks -->
+
+
+            <!-- Info Blcoks -->
+            <div class="row">
+                <div class="col-sm-4 info-blocks">
+                    <i class="icon-info-blocks fa fa-code"></i>
+                    <div class="info-blocks-in">
+                        <h3>SEO Ready</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 info-blocks">
+                    <i class="icon-info-blocks fa fa-compress"></i>
+                    <div class="info-blocks-in">
+                        <h3>Fully Responsive</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 info-blocks">
+                    <i class="icon-info-blocks fa fa-html5"></i>
+                    <div class="info-blocks-in">
+                        <h3>CSS3 + HTML5</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End Info Blcoks -->
+            <div class="row service-v1 margin-bottom-40">
+                <div class="col-md-4 md-margin-bottom-40">
+                    <div class="card small">
+                        <div class="card-image">
+                            <img class="img-responsive" src="img/service1.jpg" alt="">
+                            <span class="card-title">Material Design</span>
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt
+                            </p>
                         </div>
                     </div>
-                    <p class="comment-text">
-                        <?=htmlspecialchars($item['content'])?>
-                    </p>
                 </div>
-            <?php endif; ?>
-        <?php endforeach; ?>
-    </div>
+                <div class="col-md-4 md-margin-bottom-40">
+                    <div class="card small">
+                        <div class="card-image">
+                            <img class="img-responsive" src="img/service2.jpg" alt="">
+                            <span class="card-title">Bootstrap</span>
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 md-margin-bottom-40">
+                    <div class="card small">
+                        <div class="card-image">
+                            <img class="img-responsive" src="img/service3.jpg" alt="">
+                            <span class="card-title">HTML5/CSS3</span>
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Service Blcoks -->
+
+
+
+
+        </div>
+    </section>
 
 </div>
-<div class="loading" style="display: none;"><img src="/media/img/Reload.gif" alt=""></div>
-<button id="next" class="next-btn" style="display: none">点击加载下一页</button>
-<p class="loading-finish">已全部加载</p>
-<?= LinkPager::widget([
-    'pagination' => $pages,
-    'nextPageLabel' => false,
-    'prevPageLabel' => false,
-    'hideOnSinglePage' => false,
-]);
-?>
-<style>
-    .pagination{
-        display: none;
-    }
-    .loading {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
-    .loading img {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
-    .next-btn {
-        display: block;
-        margin: 0 auto 20px;
-        border: 0;
-        font-size: 14px;
-        width: 200px;
-        height: 40px;
-        color: #fff;
-        background: rgb(8, 11, 20);
-    }
-    .loading-finish {
-        text-align: center;
-        font-size: 14px;
-        color: #999;
-        margin: 20px auto;
-        display: none;
-        padding-bottom: 20px;
-    }
-</style>
-<script>
-    $(function () {
-        var total = $('.pagination li').length;
-        var currentPageIndex = 0;
-        // $(document).on('click', '.pagination a', function (e) {
-        //     e.preventDefault();
-        //     var url = $(this).attr('href');
-        //     $.get(url, function (msg) {
-        //         $('.container').append(msg);
-        //     });
-        // });
-
-        if(total <= 1){
-            $('#next').hide();
-            $('.loading-finish').show();
-            if (total === 0) {
-                $('.loading-finish').text('已全部加载')
-            }
-        }
-
-        $(window).scroll(function() {
-            if (($(window).scrollTop() + $(window).height() > $(document).height() - 1)) {
-                console.log(currentPageIndex)
-                if(currentPageIndex + 1 < total){
-                    $('#next').click()
-                }
-            }
-        });
-
-        $('#next').on('click',function () {
-            $('.loading').show();
-            var _this = $(this);
-            currentPageIndex++;
-            var url = $($('.pagination a')[currentPageIndex]).attr('href');
-            $.get(url, function (msg) {
-                $('#container_id').append(msg);
-                $('.loading').hide();
-                if(currentPageIndex+1 === total){
-                    // _this.hide()
-                    $('.loading-finish').show();
-                    $('.loading').hide();
-                }
-            });
-        })
-    })
-</script>
